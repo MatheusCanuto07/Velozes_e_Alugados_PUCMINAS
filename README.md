@@ -27,7 +27,7 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em s
 
 -
 
-### Passos para Inicializar o Projeto
+## Passos para Inicializar o Projeto
 
 #### 1. Clone o repositório
 
