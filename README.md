@@ -21,7 +21,7 @@ Aqui vai ter um resumo muito bom algum dia
 
 * Luciana Mara Freitas Diniz
 
-### Pré-requisitos
+## Pré-requisitos
 
 Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
