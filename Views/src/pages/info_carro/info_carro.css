@@ -1,0 +1,40 @@
+body {
+    background-color: #007BFF;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .car-image {
+    width: 300px;
+    height: auto;
+    margin: 0px auto;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 150px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .indisponivel{
+    color:red;
+
+  }
+  .incluso{
+    color:red;
+  }
