@@ -1,33 +1,117 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="info_carro.css">
-  <title>Info Veículo</title>
-  
+    <title>Velozes e Alugados</title>
+    <link rel="stylesheet" href="menu_inicial_adm.css">
+    <link rel="stylesheet" href="../../components/footer/footer.css">
+    <link rel="stylesheet" href="../../components/header/header.css">
+    <link rel="stylesheet" href="../../components/header/base.css">
 </head>
+
 <body>
-  <h1>Informações do Carro</h1>
-  <img class="car-image" src="/Views/src/assets/imgs/Carro.jfif" alt="Car Image">
-  
-  <p class="indisponivel">Veículo indisponível</p>
+    <header>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>      
+    
+          <label class="logo">Velozes e Alugados</label>
+          <ul>
+              <li><a class="active" href="../menu_principal/menu_inicial.html">Home</a></li>
+              <li><a href="../perfil/perfil.html">Perfil</a></li>
+              <li><a href="../canal_de_informações/canal_de_informacoes.html">Serviços</a></li>
+              <li><a href="../menu_inicial_adm/menu_inicial_adm.html">Menu ADM</a></li>
+              <li><a href="../login/login.html">Sair</a></li>
+          </ul>
+        </nav>
+      </header>
 
-  <p>Lugares                    5</p>
-  <p>Ar-condicionado            Sim</p>
-  <p>Câmbio Manual</p>
-  <p>Portas 4</p>
-  <p>Airbag Sim</p>
-  <p>Malas 1</p>
-  <p>Direção Hidráulica</p>
-  <p>Trava elétrica Sim</p>
+      <main>
+        <div class="container">
+            <div class="car">
+               <h1>Informações do Carro</h1>
+                <img class="car-image" src="../../assets/imgs/carro1.jpg" alt="Car Image">
+            </div>
+            
+            <div class="vehicle-info">
+                <h2 class="vehicle-name">Nome do veículo</h2>
+                <p class="indisponivel">Veículo Indisponível</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p class="price">R$ 000,00</p>
+                <hr>
+                <div class="details">
+                    <p>Lugares: 5</p>
+                    <p>Ar-condicionado: Sim</p>
+                    <p>Câmbio: Manual</p>
+                    <p>Portas: 4</p>
+                    <p>Airbag: Sim</p>
+                    <p>Malas: 1</p>
+                    <p>Direção: Hidráulica</p>
+                    <p>Trava elétrica: Sim</p>
+                </div>
+                <hr>
+                <div class="incluso">
+                    <h3>Incluso no valor</h3>
+                    <ul>
+                        <li>Proteção contra roubo</li>
+                        <li>Taxas da locadora</li>
+                        <li>Melhor preço</li>
+                        <li>Km livre ilimitado</li>
+                    </ul>
+                </div>
+                <label>
+                    <input type="checkbox"> Me avise quando estiver disponível
+                </label>
+                <a class="button" href="browse-cars.html">Alugar</a>
+            </div>
+        </div>
+      </main>
+    <footer>
+        <div class="colunas">
+            <div>
+                <h4>Métodos de pagamento</h4>
+                <div class="payment-info">
+                    <img src="img/forma-pagamento.webp" alt="Formas de pagamento">
+                </div>
 
-  <p class="incluso">Incluso no valor</p>
+            </div>
 
-  <p>Proteção contra roubo</p>
-  <p>Taxas da locadora</p>
-  <p>Melhor preço</p>
-  <p>Km livre ilimitado</p>
+            <div class="links_rapidos">
+                <h4>Links rápidos</h4>
+                <p><a href="#">Central de ajuda</a></p>
+                <p><a href="#">Sobre nós</a></p>
+                <p><a href="#">Política de privacidade</a></p>
+                <p><a href="#">Central de ajuda</a></p>
+                <p><a href="#">Promoções</a></p>
+            </div>
 
-  <a class="button" href="browse-cars.html">Alugar</a>
-  
+            <div>
+                <h4>Redes sociais</h4>
+                <p><a href="#"><ion-icon name="logo-instagram"></ion-icon> Instagram</a></p>
+                <p> <a href="#"><ion-icon name="logo-twitter"></ion-icon> Twitter</a></p>
+                <P><a href="#"><ion-icon name="logo-facebook"></ion-icon> Facebook</a></P>
+            </div>
+
+            <div>
+                <h4>Contato</h4>
+                <p>Email: <a href="#">@velozes&Alugados.com</a></p>
+                <p>Telefone: <a href="#">(31)99785-5625</a></p>
+                <p>Endereço:</p>
+                <p><a href="#">Av.blablabla/2500/</a></p>
+
+            </div>
+        </div>
+        <div class="info"> &copy; 2024 - Todos os direitos reservados</div>
+    </footer>
 </body>
+
 </html>
