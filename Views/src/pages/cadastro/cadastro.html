@@ -26,115 +26,111 @@
         </ul>
       </nav>  
     <form>
-        <div class="container">
+        <div class="container text-center">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Cadastrar</h1>
+                </div>
+            </div>
+            <h1 class="dados text-left">Informações pessoais</h1>
             <div class="row">
                 <div class="col">
-                    <div class="form-header">
-                        <div class="title">
-                            <h1>Cadastrar</h1>
+                    <div class="input-box">
+                        <label for="fristname">Nome completo</label>
+                        <input id="fristname" type="text" name="fristname" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="birthdate">Data de Nascimento</label>
+                        <input id="birthdate" type="text" name="birthdate" maxlength="10" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="gender">Gênero</label>
+                        <div class="custom-select">
+                            <input id="gender" type="text" name="gender" placeholder="Selecione seu gênero" readonly
+                                required>
+                            <ul class="options">
+                                <li data-value="" class="option selected">Selecione seu gênero</li>
+                                <li data-value="masculino" class="option">Masculino</li>
+                                <li data-value="feminino" class="option">Feminino</li>
+                                <li data-value="outro" class="option">Outro</li>
+                                <li data-value="prefiro_nao_dizer" class="option">Prefiro não dizer</li>
+                            </ul>
                         </div>
                     </div>
-
-                    <h1 class="dados">Informações pessoais</h1>
-
-                    <div class="input-group">
-                        <div class="input-box">
-                            <label for="fristname">Nome completo</label>
-                            <input id="fristname" type="text" name="fristname" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="email">E-mail</label>
-                            <input id="email" type="email" name="email" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="number">CPF</label>
-                            <input id="cpf" type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="number">Celular</label>
-                            <input id="number" type="tel" name="number" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="birthdate">Data de Nascimento</label>
-                            <input id="birthdate" type="text" name="birthdate" maxlength="10" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="gender">Gênero</label>
-                            <div class="custom-select">
-                                <input id="gender" type="text" name="gender" placeholder="Selecione seu gênero" readonly
-                                    required>
-                                <ul class="options">
-                                    <li data-value="" class="option selected">Selecione seu gênero</li>
-                                    <li data-value="masculino" class="option">Masculino</li>
-                                    <li data-value="feminino" class="option">Feminino</li>
-                                    <li data-value="outro" class="option">Outro</li>
-                                    <li data-value="prefiro_nao_dizer" class="option">Prefiro não dizer</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <h1 class="dados">Endereço</h1>
-
-
-                    <div class="input-group">
+                </div>
+            </div>
+            <h1 class="dados text-left">Endereço</h1>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
                         <div class="input-box">
                             <label for="cep">CEP</label>
                             <input id="cep" type="text" name="cep" required>
                         </div>
-
-                        <div class="input-box">
-                            <label for="state">Estado</label>
-                            <input id="state" type="text" name="state" readonly>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="city">Cidade</label>
-                            <input id="city" type="text" name="city" readonly>
-                        </div>
-
                         <div class="input-box">
                             <label for="neighborhood">Bairro</label>
                             <input id="neighborhood" type="text" name="neighborhood" readonly>
                         </div>
-
+                    </div>
+                    <div class="col">
+                        <div class="input-box">
+                            <label for="state">Estado</label>
+                            <input id="state" type="text" name="state" readonly>
+                        </div>
                         <div class="input-box">
                             <label for="street">Rua</label>
                             <input id="street" type="text" name="street" readonly>
                         </div>
-
-
+                    </div>
+                    <div class="col">
+                        <div class="input-box">
+                            <label for="city">Cidade</label>
+                            <input id="city" type="text" name="city" readonly>
+                        </div>
                         <div class="input-box">
                             <label for="houseNumber">Número da Casa</label>
                             <input id="houseNumber" type="text" name="houseNumber" required>
                         </div>
-
                     </div>
-
-                    <h1 class="dados">Digite sua senha</h1>
-
-                    <div class="input-group-senha">
+                </div>
+            </div>
+            <h1 class="dados text-left">Digite sua senha</h1>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
                         <div class="input-box">
                             <label for="password">Senha</label>
                             <input id="password" type="password" name="password" required>
                         </div>
-
+                    </div>
+                    <div class="col">
                         <div class="input-box">
-                            <label for="password">Confirme sua senha</label>
-                            <input id="password" type="password" name="Confirmpassword" required>
+                            <label for="Confirmpassword">Confirme sua senha</label>
+                            <input id="Confirmpassword" type="password" name="Confirmpassword" required>
                         </div>
                     </div>
-
-                    <div class="continue-button">
-                        <button><a href="#">Continuar</a></button>
+                    <div class="col">
                     </div>
                 </div>
+            </div>
+            <div class="continue-button">
+                <button><a href="#">Continuar</a></button>
             </div>
         </div>
     </form>

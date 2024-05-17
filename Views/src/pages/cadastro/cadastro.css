@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-}
-
 
 body {
     font-family: 'Open-Sans', sans-serif;
@@ -184,6 +180,15 @@ footer a {
 
 }
 
+.text-left {
+    padding-bottom: 2rem;
+    text-align: left;
+}
+.input-box label {
+    display: block;
+    text-align: left;
+}
+
 .title{
     padding-top: 1rem;
 }
@@ -192,18 +197,6 @@ footer a {
     margin-bottom: 3rem;
     justify-content: space-between;
     display: flex;
-}
-
-.input-group-senha{
-    padding: 1rem;
-}
-
-.input-group{
-    width: 110%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
 }
 
 .input-box{
