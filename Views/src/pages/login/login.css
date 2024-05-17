@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -8,64 +8,72 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /*cor e fonte do corpo*/
-body{
+body {
     font-family: 'Open-Sans', sans-serif;
     background: #0B1541;
 }
 
 /*cabeçalho*/
-header nav{
+header nav {
     background: #0B1541;
     height: 80px;
     width: 100%;
     border-bottom: 2px solid #F4AD00;
 }
 
-label.logo{
+label.logo {
     color: #F4AD00;
     font-size: 35px;
     line-height: 80px;
     padding: 0 50px;
-    font-weight: bold; /*negrito*/
+    font-weight: bold;
+    /*negrito*/
 }
 
-.logo_img{
-    max-width:400px;
-    max-height:100px;
+.logo_img {
+    max-width: 400px;
+    max-height: 100px;
     width: auto;
     height: auto;
     padding: 20px;
 }
 
-header nav ul{
+header nav ul {
     float: right;
     margin-right: 20px;
     background-color: #0B1541;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     line-height: 90px;
     margin: 0 6px;
 }
 
-header nav ul li a{
+header nav ul li a {
     color: white;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 5px;
-    text-transform: uppercase; /**/
+    text-transform: uppercase;
+    /**/
 }
 
-a.active,a:hover{
+a.active,
+a:hover {
     background: #F4AD00;
     transition: .5s;
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 30px;
-    color:#F4AD00;
+    color: #F4AD00;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -73,28 +81,28 @@ a.active,a:hover{
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
 
-main{
-  background-color: #0B1541;
+main {
+    background-color: #0B1541;
 }
 
 /*Footer*/
-footer{
+footer {
     background-color: #0B1541;
     color: #F4AD00;
     border-top: 2px solid #F4AD00;
     text-align: center;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-   /* padding: 20px;*/
+    /* padding: 20px;*/
 }
 
-.colunas{
+.colunas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -102,21 +110,21 @@ footer{
     padding-top: 20px;
 }
 
-.info{
+.info {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 40px;
 }
 
-footer a{
+footer a {
     list-style: none;
     text-decoration: none;
     color: aliceblue;
 }
 
-.cartao{
-    max-width:200px;
-    max-height:150px;
+.cartao {
+    max-width: 200px;
+    max-height: 150px;
     width: auto;
     height: auto;
 }
@@ -126,16 +134,18 @@ footer a{
 /*LOGIN*/
 
 
-section{
+section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh; /*altura mínima*/
-    width: 100%; /*largura da área*/
+    min-height: 80vh;
+    /*altura mínima*/
+    width: 100%;
+    /*largura da área*/
 }
 
-.form-box{
-    position:relative;
+.form-box {
+    position: relative;
     width: 400px;
     height: 450px;
     background: transparent;
@@ -147,21 +157,21 @@ section{
     border-radius: 5px 60px 5px 60px;
 }
 
-h2{
+h2 {
     font-size: 2.1em;
     text-align: center;
     color: white;
 }
 
 
-#login .inputbox{
-     position: relative;
-     margin: 30px 0;
-     width: 310px;
-     flex-direction: column;
+#login .inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    flex-direction: column;
 }
 
-.inputbox a{
+.inputbox a {
     color: white;
     font-size: 15px;
 }
@@ -170,14 +180,15 @@ h2{
 
 #login .inputbox input {
     width: 100%;
-    padding: 15px;  
+    padding: 15px;
     border: none;
     outline: none;
     color: white;
     border-radius: 5px;
     font-size: 1em;
-    text-align:start;
-    color: #000000; /*cor da letra*/
+    text-align: start;
+    color: #000000;
+    /*cor da letra*/
 }
 
 .recuperar {
@@ -185,57 +196,75 @@ h2{
     text-align: center;
 }
 
-.recuperar a{
+.recuperar a {
     color: white;
     font-size: 12px;
     text-align: center;
 }
- .recuperar a:hover{
-     text-decoration: underline;
- }
+
+.recuperar a:hover {
+    text-decoration: underline;
+}
 
 
- .botoes{
+.botoes {
     display: flex;
-    justify-content: center; /* Alinha os itens horizontalmente */
-    align-items: center; /* Alinha os itens verticalmente */
-    height: 50px; /* Ajuste conforme necessário */
+    justify-content: center;
+    /* Alinha os itens horizontalmente */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    height: 50px;
+    /* Ajuste conforme necessário */
     padding-top: 20px;
- }
+}
 
- .entrar, .conta {
-    margin: 0 10px; /* Adiciona 10 pixels de margem horizontalmente entre os botões */
-  }
+.entrar,
+.conta {
+    margin: 0 10px;
+    /* Adiciona 10 pixels de margem horizontalmente entre os botões */
+}
 
 
- .entrar{
+.entrar {
     background: #F4AD00;
     color: black;
     border: none;
     height: 45px;
     width: 100%;
     border-radius: 5px;
- }
+}
 
- .entrar:hover{
+.entrar p {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 24.96px;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.entrar:hover {
     background: #666666;
     color: white;
     height: 45px;
     width: 100%;
     border-radius: 5px;
     transition: .3s;
- }
+}
 
- .conta{
+.conta {
     background: none;
     color: #F4AD00;
     border: 1px solid #F4AD00;
     height: 45px;
     width: 100%;
     border-radius: 5px;
- }
+}
 
- .conta:hover{
+.conta:hover {
     background: #666666;
     color: white;
     border: none;
@@ -243,31 +272,43 @@ h2{
     width: 100%;
     border-radius: 5px;
     transition: .3s;
- }
+}
 
+.conta p {
+    text-align: center;
+    color: #F4AD00;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 24.96px;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 
 
 
 /*TELAS MENORES*/
 
 
-@media (max-width: 952px){
-    label.logo{
+@media (max-width: 952px) {
+    label.logo {
         font-size: 30px;
         padding-left: 50px;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 16px;
     }
 }
 
-@media (max-width: 858px){
+@media (max-width: 858px) {
 
-    .checkbtn{
+    .checkbtn {
         display: block;
     }
-    ul{
+
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -279,49 +320,51 @@ h2{
         z-index: 1;
     }
 
-    header nav ul li{
+    header nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 15px;
     }
 
-    header nav ul li a{
+    header nav ul li a {
         font-size: 20px;
     }
 
-    a:hover,a.active{
+    a:hover,
+    a.active {
         background: none;
-        color:#F4AD00
+        color: #F4AD00
     }
 
-    #check:checked ~ ul{
+    #check:checked~ul {
         left: 0;
     }
 
 }
 
-@media (max-width: 858px){
-footer
-{
-    background-color:#0B1541;
-    width: 100%;
-    height: 2.5rem;
-    position: absolute;
-    bottom: 0;
-}
+@media (max-width: 858px) {
+    footer {
+        background-color: #0B1541;
+        width: 100%;
+        height: 2.5rem;
+        position: absolute;
+        bottom: 0;
+    }
 
-.colunas{
-    justify-content:center;
-    display: contents;
-}
+    .colunas {
+        justify-content: center;
+        display: contents;
+    }
 
-.links_rapidos{
-    padding-top: 20px;
+    .links_rapidos {
+        padding-top: 20px;
+    }
+
+    .redes_sociais {
+        padding-top: 20px;
+    }
+
+    .contato {
+        padding-top: 20px;
+    }
 }
-.redes_sociais{
-    padding-top: 20px;
-}
-.contato{
-    padding-top: 20px;
-}
-}   
