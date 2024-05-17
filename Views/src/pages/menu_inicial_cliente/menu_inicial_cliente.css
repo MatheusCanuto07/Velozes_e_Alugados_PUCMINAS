@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*cor e fonte do corpo*/
+body {
+    font-family: 'Open-Sans', sans-serif;
+    background: #0B1541;
+    color: #ffffff;
+}
+
+/*cabeçalho*/
+header {
+    width: 100%;
+    height: 80px;
+    background: #0B1541;
+    border-bottom: 2px solid #F4AD00;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    position: relative;
+}
+
+label.logo {
+    color: #F4AD00;
+    font-size: 35px;
+    font-weight: bold; /*negrito*/
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    background-color: #0B1541;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #F4AD00;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #F4AD00;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+main {
+    background-color: #0B1541;
+    padding-bottom: 100px; /* espaço para o footer */
+}
+
+/*Main*/
+
+.box h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh; /*altura mínima*/
+    width: 100%; /*largura da área*/
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.inputbox-cid {
+    width: 100%;
+    height: auto; /* Ajuste a altura conforme necessário */
+}
+
+.inputbox-cid label,
+.inputbox-data1 label,
+.inputbox-data2 label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.inputbox-cid input,
+.inputbox-data1 input,
+.inputbox-data2 input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #606060; /*cor da letra*/
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.datas {
+    display: flex;
+    justify-content: space-between; /* Alinha os itens horizontalmente */
+    align-items: flex-start; /* Alinha os itens verticalmente */
+    width: 100%; /* Ajuste conforme necessário */
+    gap: 10px; /* Espaço entre os inputs */
+}
+
+.inputbox-data1,
+.inputbox-data2 {
+    flex: 1;
+    height: auto; /* Ajuste a altura conforme necessário */
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+hr {
+    border: 1px solid #F4AD00; /* Cor e espessura da linha horizontal */
+    width: 90%; /* Ajuste conforme necessário */
+    margin: 20px auto; /* Ajuste conforme necessário */
+}
+
+/*Botão*/
+button {
+    background-color: #F4AD00;
+    color: #0B1541;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #c79200;
+    transition: .3s;
+}
+
+/*Cards*/
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #0B1541;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%; /* Largura padrão para dispositivos móveis */
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card-content button {
+    background-color: #F4AD00;
+    color: #0B1541;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card-content button:hover {
+    background-color: #c79200;
+    transition: .3s;
+}
+
+/* Estilos para desktop */
+@media (min-width: 769px) {
+    .card {
+        width: 45%; /* Aumenta a largura dos cards em telas maiores */
+        max-width: 400px; /* Aumenta o limite máximo de largura dos cards */
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: #0B1541;
+    color: #F4AD00;
+    border-top: 2px solid #F4AD00;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.colunas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.info {
+    text-align: center;
+    padding-top: 40px;
+}
+
+footer a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+footer a:hover {
+    color: #F4AD00;
+    transition: .5s;
+}
+
+.redes_sociais ion-icon {
+    font-size: 30px;
+    padding-right: 10px;
+    color: #F4AD00;
+}
+
+.cartao {
+    max-width: 150px;
+    height: auto;
+}
+
+.redes_sociais a:hover {
+    color: #F4AD00;
+    transition: .5s;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0B1541;
+        top: 0;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 30px 0; /* Aumenta a margem para separar os itens */
+        line-height: 30px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #F4AD00;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #check:checked ~ .checkbtn {
+        z-index: 2;
+    }
+}
