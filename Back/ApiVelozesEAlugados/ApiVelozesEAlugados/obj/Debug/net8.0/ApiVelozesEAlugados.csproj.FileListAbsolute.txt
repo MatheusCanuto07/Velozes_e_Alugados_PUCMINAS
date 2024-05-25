@@ -1,0 +1,8 @@
+E:\Trabalhos Puc\Trabalho Interdisciplinar para Processos de Negocios\Back\ApiVelozesEAlugados\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.csproj.AssemblyReference.cache
+E:\Trabalhos Puc\Trabalho Interdisciplinar para Processos de Negocios\Back\ApiVelozesEAlugados\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trabalhos Puc\Trabalho Interdisciplinar para Processos de Negocios\Back\ApiVelozesEAlugados\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.AssemblyInfoInputs.cache
+E:\Trabalhos Puc\Trabalho Interdisciplinar para Processos de Negocios\Back\ApiVelozesEAlugados\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.AssemblyInfo.cs
+E:\Trabalhos Puc\Trabalho Interdisciplinar para Processos de Negocios\Back\ApiVelozesEAlugados\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.csproj.CoreCompileInputs.cache
+E:\Trabalhos Puc\Trabalho Interdisciplinar para Processos de Negocios\Back\ApiVelozesEAlugados\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.MvcApplicationPartsAssemblyInfo.cs
+E:\Trabalhos Puc\Trabalho Interdisciplinar para Processos de Negocios\Back\ApiVelozesEAlugados\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.MvcApplicationPartsAssemblyInfo.cache
+E:\Trabalhos Puc\Trabalho Interdisciplinar para Processos de Negocios\Back\ApiVelozesEAlugados\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.sourcelink.json
