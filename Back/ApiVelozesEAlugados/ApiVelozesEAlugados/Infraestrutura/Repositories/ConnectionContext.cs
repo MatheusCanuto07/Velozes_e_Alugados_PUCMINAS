@@ -1,5 +1,6 @@
 ﻿using ApiTeste.Domain.Models.Funcionario;
 using ApiTeste.Domain.Models.Setor;
+using ApiVelozesEAlugados.db;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -8,17 +9,16 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace ApiTeste.Infraestrutura.Repositories
 {
-    public class ConnectionContext : DbContext
+    public class ConnectionContext : DbFuriososContext 
+
     {
+    
         //Faz o mapeamento no banco
-        public DbSet<Funcionario> funcionario { get; set; }
+        public DbSet<Pessoa> pessoa { get; set; }
         public DbSet<Setor> setor { get; set; }
         //Subescreve um metodo
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseMySQL(
-            "Server=localhost;" +
-            "Port=5432; Database = db_funcionario;" +
-            "User Id = postgres;" +
-            "Password = 7198;");
+        => optionsBuilder.UseMySql("server=localhost;port=3306;uid=root;pwd=245199;database=db_furiosos", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.33-mysql"));
+
     }
 }

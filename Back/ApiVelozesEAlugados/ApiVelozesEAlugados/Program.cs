@@ -1,11 +1,20 @@
 using System.Text;
+using System;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using ApiTeste.Infraestrutura.Repositories;
 using ApiTeste.Application.Mapping;
-using ApiTeste.Domain.Models.Funcionario;
 using Asp.Versioning;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using ApiVelozesEAlugados.db;
+using ApiVelozesEAlugados.Infraestrutura.Repositories;
+
+
+
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,82 +27,85 @@ builder.Services.AddAutoMapper(typeof(DomainToDTOMapping));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
+//Higor - 27/05/2024 - InjeÃ§Ã£o de dependencias seguida instruÃ§Ã£o VÃ­deo 2 Filipe Brito
+builder.Services.AddTransient<IPessoaRepositorio, PessoaRepositorio>();
+
 //Versionamento - Adicionar futuramente 
 
-//builder.Services.AddApiVersioning(options =>
-//{
-//    // Especifique a estratégia de versionamento desejada (por exemplo, pela URL, pelo cabeçalho da solicitação, etc.)
-//    options.ApiVersionReader = new UrlSegmentApiVersionReader();
-//    // Adicione a versão padrão
-//    options.AssumeDefaultVersionWhenUnspecified = true;
-//    options.DefaultApiVersion = new ApiVersion(1, 0);
-//});
+/*builder.Services.AddApiVersioning(options =>
+{
+   // Especifique a estratï¿½gia de versionamento desejada (por exemplo, pela URL, pelo cabeï¿½alho da solicitaï¿½ï¿½o, etc.)
+    options.ApiVersionReader = new UrlSegmentApiVersionReader();
+    // Adicione a versï¿½o padrï¿½o
+   options.AssumeDefaultVersionWhenUnspecified = true;
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+});*/
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Name = "Authorization",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer"
-    });
+   c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+   {
+       Name = "Authorization",
+       In = ParameterLocation.Header,
+       Type = SecuritySchemeType.ApiKey,
+       Scheme = "Bearer"
+   });
 
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement()
-    {
-    {
-        new OpenApiSecurityScheme
-        {
-        Reference = new OpenApiReference
-            {
-            Type = ReferenceType.SecurityScheme,
-            Id = "Bearer"
-            },
-            Scheme = "oauth2",
-            Name = "Bearer",
-            In = ParameterLocation.Header,
+   c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+   {
+   {
+       new OpenApiSecurityScheme
+       {
+       Reference = new OpenApiReference
+           {
+           Type = ReferenceType.SecurityScheme,
+           Id = "Bearer"
+           },
+           Scheme = "oauth2",
+           Name = "Bearer",
+           In = ParameterLocation.Header,
 
-        },
-        new List<string>()
-        }
-    });
+       },
+       new List<string>()
+       }
+   });
 
 
 });
 
-//Injeção de depêndecia - Usar os metodos sem precisar instaciar o objeto
-builder.Services.AddTransient<IFuncionariorepository, FuncionarioRepository>();
+//Injeï¿½ï¿½o de depï¿½ndecia - Usar os metodos sem precisar instaciar o objeto
+//builder.Services.AddTransient<IFuncionariorepository, FuncionarioRepository>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: "MinhaPolitica",
-            policy =>
-            {
-                policy.WithOrigins("http://localhost:8080", "http://localhost:5502")
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-            ;
-            }
-        );
+   options.AddPolicy(name: "MinhaPolitica",
+           policy =>
+           {
+               policy.WithOrigins("http://localhost:8080", "http://localhost:5502")
+               .AllowAnyMethod()
+               .AllowAnyHeader()
+           ;
+           }
+       );
 });
 
 var key = Encoding.ASCII.GetBytes(ApiTeste.Key.Secret);
 
 builder.Services.AddAuthentication(x =>
 {
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+   x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+   x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 }).AddJwtBearer(x =>
 {
-    x.RequireHttpsMetadata = false;
-    x.SaveToken = true;
-    x.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = false,
-        ValidateAudience = false
-    };
+   x.RequireHttpsMetadata = false;
+   x.SaveToken = true;
+   x.TokenValidationParameters = new TokenValidationParameters
+   {
+       ValidateIssuerSigningKey = true,
+       IssuerSigningKey = new SymmetricSecurityKey(key),
+       ValidateIssuer = false,
+       ValidateAudience = false
+   };
 });
 
 var app = builder.Build();
@@ -102,13 +114,13 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/error-development");
-    app.UseSwagger();
-    app.UseSwaggerUI();
+   app.UseExceptionHandler("/error-development");
+   app.UseSwagger();
+   app.UseSwaggerUI();
 }
 else
 {
-    app.UseExceptionHandler("/error");
+   app.UseExceptionHandler("/error");
 }
 
 app.UseCors("MinhaPolitica");

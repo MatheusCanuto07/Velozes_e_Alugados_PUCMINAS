@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Leitura de Dados</title>
+</head>
+<body>
+    <h1>Dados do Banco de Dados</h1>
+    
+    <div id="dados"></div>
+
+    <button onclick="carregarDados()">Carregar Dados</button>
+
+    <script>
+        function carregarDados() {
+           
+            fetch('https://localhost:7090/Controllers')
+                .then(response => response.json())
+                .then(data => {
+                    const dadosDiv = document.getElementById('dados');
+                    let html = '';
+                    data.forEach(pessoa => {
+                        html += `
+                            <div>
+                                <h3>Nome: ${pessoa.NomePessoa}</h3>
+                                <p>CPF: ${pessoa.Cpf}</p>
+                                <p>Data de Nascimento: ${pessoa.DataNascimento?.ToString("dd/MM/yyyy")}</p>
+                                <p>CNH: ${pessoa.CnhPessoa}</p>
+                                <p>CEP: ${pessoa.CepPessoa}</p>
+                                <p>Endereço: ${pessoa.Logradouro}, ${pessoa.Numero} - ${pessoa.Complemento}, ${pessoa.Bairro}, ${pessoa.Cidade} - ${pessoa.Uf}</p>
+                                <p>Sexo: ${pessoa.Sexo}</p>
+                            </div>
+                        `;
+                    });
+                    dadosDiv.innerHTML = html;
+                })
+                .catch(error => console.error('Erro ao carregar dados:', error));
+        }
+    </script>
+</body>
+</html>

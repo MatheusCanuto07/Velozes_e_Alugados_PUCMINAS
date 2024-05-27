@@ -1,0 +1,6 @@
+C:\Cursos\Sistema de informação\1_2024\Diciplinas\TIAPN\Trabalho_Final\Back\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.csproj.AssemblyReference.cache
+C:\Cursos\Sistema de informação\1_2024\Diciplinas\TIAPN\Trabalho_Final\Back\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cursos\Sistema de informação\1_2024\Diciplinas\TIAPN\Trabalho_Final\Back\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.AssemblyInfoInputs.cache
+C:\Cursos\Sistema de informação\1_2024\Diciplinas\TIAPN\Trabalho_Final\Back\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.AssemblyInfo.cs
+C:\Cursos\Sistema de informação\1_2024\Diciplinas\TIAPN\Trabalho_Final\Back\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.csproj.CoreCompileInputs.cache
+C:\Cursos\Sistema de informação\1_2024\Diciplinas\TIAPN\Trabalho_Final\Back\ApiVelozesEAlugados\obj\Debug\net8.0\ApiVelozesEAlugados.sourcelink.json
