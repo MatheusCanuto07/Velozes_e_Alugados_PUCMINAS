@@ -1,0 +1,28 @@
+# Arquivos de compilação
+bin/
+obj/
+
+# Arquivos de configuração local
+appsettings.Development.json
+appsettings.Production.json
+appsettings.local.json
+
+# Pacotes NuGet
+*.nuget.props
+*.lock.json
+packages/
+
+# Arquivos de IDE
+.vs/
+*.suo
+*.user
+*.sln.iml
+
+# Logs e arquivos de cache
+*.log
+node_modules/
+.DS_Store
+
+# Arquivos de ambiente local
+.env
+.env.local
