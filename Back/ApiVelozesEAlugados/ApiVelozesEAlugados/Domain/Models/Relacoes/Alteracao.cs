@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using CarroName;
+using FuncionarioNameSpace;
 
-namespace ApiVelozesEAlugados.db;
+namespace Relacoes;
 
 public partial class Alteracao
 {

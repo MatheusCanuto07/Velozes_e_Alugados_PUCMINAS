@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiTeste.Controllers
+namespace ApiVelozesEAlugados.Controllers.Throw
 {
     [ApiExplorerSettings(IgnoreApi = true)]
     public class ThrowController : ControllerBase
@@ -10,7 +10,7 @@ namespace ApiTeste.Controllers
         [Route("/error")]
         public IActionResult HandleError() =>
             Problem();
-        
+
         [Route("/error-development")]
         public IActionResult HandleErrorDevelopment(
         [FromServices] IHostEnvironment hostEnvironment)

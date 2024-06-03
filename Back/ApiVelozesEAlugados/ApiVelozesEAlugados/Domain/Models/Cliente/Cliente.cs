@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using ApiVelozesEAlugados.Domain.Models.Relacoes;
+using PessoaNamespace;
 
-namespace ApiVelozesEAlugados.db;
+namespace ClienteName;
 
 public partial class Cliente
 {

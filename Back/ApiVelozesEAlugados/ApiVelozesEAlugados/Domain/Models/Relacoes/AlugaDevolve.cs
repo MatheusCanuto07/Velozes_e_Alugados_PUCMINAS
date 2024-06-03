@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using CarroName;
+using ClienteName;
+using Microsoft.EntityFrameworkCore;
 
-namespace ApiVelozesEAlugados.db;
+namespace ApiVelozesEAlugados.Domain.Models.Relacoes;
 
+[Keyless]
 public partial class AlugaDevolve
 {
+
     public int CodLocacao { get; set; }
 
     public string ClientePessoaCpf { get; set; } = null!;

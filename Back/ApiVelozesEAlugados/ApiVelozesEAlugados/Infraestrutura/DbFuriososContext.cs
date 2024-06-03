@@ -1,7 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using ApiVelozesEAlugados.Domain.Models.Relacoes;
+using CarroName;
+using ClienteName;
+using FuncionarioNameSpace;
 using Microsoft.EntityFrameworkCore;
+using PessoaNamespace;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
+using Relacoes;
+using Telefone;
+using UsuarioName;
 
 namespace ApiVelozesEAlugados.db;
 

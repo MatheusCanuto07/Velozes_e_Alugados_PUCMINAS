@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using PessoaNamespace;
 
-namespace ApiVelozesEAlugados.db;
+namespace UsuarioName;
 
 public partial class Usuario
 {

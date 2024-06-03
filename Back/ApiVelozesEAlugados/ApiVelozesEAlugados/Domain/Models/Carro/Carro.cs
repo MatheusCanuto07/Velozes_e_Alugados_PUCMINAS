@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using ApiVelozesEAlugados.Domain.Models.Relacoes;
+using Microsoft.EntityFrameworkCore;
+using Relacoes;
 
-namespace ApiVelozesEAlugados.db;
+namespace CarroName;
 
 public partial class Carro
 {

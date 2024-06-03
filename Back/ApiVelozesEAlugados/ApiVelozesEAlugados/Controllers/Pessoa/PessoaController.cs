@@ -1,15 +1,16 @@
-﻿using ApiVelozesEAlugados.db;
+﻿using PessoaNamespace;
+using IPessoaRepositoryNameSpace;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiVelozesEAlugados.Controllers
+namespace ApiVelozesEAlugados.Controllers.Pessoa
 {
     [ApiController]
     [Route("api/pessoa")]
     public class PessoaController : ControllerBase
     {
-        private readonly IPessoaRepositorio _pessoaRepositorio;
+        private readonly IPessoaRepository _pessoaRepositorio;
 
-        public PessoaController(IPessoaRepositorio pessoaRepositorio)
+        public PessoaController(IPessoaRepository pessoaRepositorio)
         {
             _pessoaRepositorio = pessoaRepositorio ?? throw new ArgumentNullException(nameof(pessoaRepositorio));
         }

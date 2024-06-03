@@ -3,18 +3,11 @@ using System;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using ApiTeste.Infraestrutura.Repositories;
-using ApiTeste.Application.Mapping;
 using Asp.Versioning;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using ApiVelozesEAlugados.db;
 using ApiVelozesEAlugados.Infraestrutura.Repositories;
-
-
-
-
-
+using IPessoaRepositoryNameSpace;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,12 +16,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 //Converte entidade para DTO
-builder.Services.AddAutoMapper(typeof(DomainToDTOMapping));
+//builder.Services.AddAutoMapper(typeof(DomainToDTOMapping));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
 //Higor - 27/05/2024 - Injeção de dependencias seguida instrução Vídeo 2 Filipe Brito
-builder.Services.AddTransient<IPessoaRepositorio, PessoaRepositorio>();
+builder.Services.AddTransient<IPessoaRepository, PessoaRepository>();
 
 //Versionamento - Adicionar futuramente 
 

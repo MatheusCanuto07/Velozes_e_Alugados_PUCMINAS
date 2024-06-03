@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Telefone;
+using ClienteName;
+using FuncionarioNameSpace;
+using UsuarioName;
 
-namespace ApiVelozesEAlugados.db;
+namespace PessoaNamespace;
 
 public partial class Pessoa
 {
