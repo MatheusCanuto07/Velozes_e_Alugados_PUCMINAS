@@ -33,6 +33,38 @@ namespace ApiVelozesEAlugados.Controllers.Pessoa
 
             return Ok();
         }
+        [HttpPut("{cpf}")]
+        public IActionResult Put(string cpf, [FromBody] PessoaViewModel pessoaViewModel)
+        {
+            if (cpf != pessoaViewModel.CPF)
+            {
+                return BadRequest("CPF in URL does not match CPF in the body.");
+            }
+
+            var existingPessoa = _pessoaRepositorio.Get().FirstOrDefault(p => p.Cpf == cpf);
+
+            if (existingPessoa == null)
+            {
+                return NotFound("Pessoa not found.");
+            }
+
+            _pessoaRepositorio.Update(cpf, pessoaViewModel);
+
+            return Ok();
+        }
+
+        [HttpGet("{cpf}")]
+        public IActionResult GetByCpf(string cpf)
+        {
+            var pessoa = _pessoaRepositorio.GetByCpf(cpf);
+
+            if (pessoa == null)
+            {
+                return NotFound("Pessoa not found.");
+            }
+
+            return Ok(pessoa);
+        }
 
     }
 }

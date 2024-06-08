@@ -7,6 +7,10 @@ namespace IPessoaRepositoryNameSpace
     {
         void add(PessoaViewModel pessoa);
         List<Pessoa> Get();
+
+        Pessoa GetByCpf(string cpf);
         Pessoa GetID(string email, string senha);
+
+        void Update(string cpf, PessoaViewModel pessoa);
     }
 }
