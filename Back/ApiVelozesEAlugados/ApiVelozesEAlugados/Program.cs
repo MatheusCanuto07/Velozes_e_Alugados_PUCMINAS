@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ApiVelozesEAlugados.Infraestrutura.Repositories;
 using IPessoaRepositoryNameSpace;
 using ApiVelozesEAlugados.Domain.Models.UsuarioRe;
+using ICarroRepositoryNameSpace;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,7 @@ builder.Services.AddEndpointsApiExplorer();
 //Higor - 27/05/2024 - Injeção de dependencias seguida instrução Vídeo 2 Filipe Brito
 builder.Services.AddTransient<IPessoaRepository, PessoaRepository>();
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddTransient<ICarroRepository, CarroRepository>();
 
 //Versionamento - Adicionar futuramente 
 
