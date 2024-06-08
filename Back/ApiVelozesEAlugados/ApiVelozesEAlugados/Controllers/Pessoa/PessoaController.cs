@@ -1,6 +1,9 @@
 ﻿using PessoaNamespace;
 using IPessoaRepositoryNameSpace;
 using Microsoft.AspNetCore.Mvc;
+using ApiVelozesEAlugados.Domain.Models;
+using ApiTeste.Application.ViewModel;
+using ApiVelozesEAlugados.Application.ViewModel;
 
 namespace ApiVelozesEAlugados.Controllers.Pessoa
 {
@@ -22,5 +25,14 @@ namespace ApiVelozesEAlugados.Controllers.Pessoa
 
             return Ok(pessoa);
         }
+
+        [HttpPost]
+        public IActionResult add(PessoaViewModel PessoaView)
+        {
+            _pessoaRepositorio.add(PessoaView);
+
+            return Ok();
+        }
+
     }
 }

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using ApiVelozesEAlugados.Infraestrutura.Repositories;
 using IPessoaRepositoryNameSpace;
+using ApiVelozesEAlugados.Domain.Models.UsuarioRe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 //Higor - 27/05/2024 - Injeção de dependencias seguida instrução Vídeo 2 Filipe Brito
 builder.Services.AddTransient<IPessoaRepository, PessoaRepository>();
+builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 
 //Versionamento - Adicionar futuramente 
 
@@ -68,6 +70,8 @@ builder.Services.AddSwaggerGen(c =>
 
 //Inje��o de dep�ndecia - Usar os metodos sem precisar instaciar o objeto
 //builder.Services.AddTransient<IFuncionariorepository, FuncionarioRepository>();
+
+
 
 builder.Services.AddCors(options =>
 {

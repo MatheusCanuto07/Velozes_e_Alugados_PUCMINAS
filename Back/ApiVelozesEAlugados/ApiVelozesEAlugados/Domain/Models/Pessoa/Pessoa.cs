@@ -4,16 +4,38 @@ using Telefone;
 using ClienteName;
 using FuncionarioNameSpace;
 using UsuarioName;
+using ApiVelozesEAlugados.Application.ViewModel;
+using Microsoft.VisualBasic;
 
 namespace PessoaNamespace;
 
-public partial class Pessoa
+public class Pessoa
 {
+    public Pessoa()
+    {
+
+    }
+    public Pessoa(PessoaViewModel pvm)
+    {
+        this.Cpf = pvm.CPF;
+        this.NomePessoa = pvm.NOME_PESSOA;
+        this.DataNascimento = pvm.DATA_NASCIMENTO;
+        this.CnhPessoa = pvm.CNH_PESSOA;
+        this.CepPessoa = pvm.CEP_PESSOA;
+        this.Logradouro = pvm.LOGRADOURO;
+        this.Numero = pvm.NUMERO;
+        this.Complemento = pvm.COMPLEMENTO;
+        this.Bairro = pvm.BAIRRO;
+        this.Cidade = pvm.CIDADE;
+        this.Uf = pvm.UF;
+        this.Sexo = pvm.SEXO;
+    }
+
     public string Cpf { get; set; } = null!;
 
     public string? NomePessoa { get; set; }
 
-    public DateOnly? DataNascimento { get; set; }
+    public DateTime? DataNascimento { get; set; }
 
     public string? CnhPessoa { get; set; }
 
