@@ -21,7 +21,7 @@ namespace ApiVelozesEAlugados.Controllers.Carros
         [HttpGet]
         public IActionResult Get() {
 
-            var carro = _carroRepository.Get(); ;
+            var carro = _carroRepository.Get();
 
             return Ok(carro);
         }
@@ -56,13 +56,13 @@ namespace ApiVelozesEAlugados.Controllers.Carros
 
         }
 
-        [HttpGet("{placa}")]
-        public IActionResult GetByPlaca(string _placa) { 
+        [HttpGet]
+        [Route("{placa}")]
+        public IActionResult GetByPlaca(string placa) { 
             
-            var carro = _carroRepository.GetByPlaca(_placa);
+            var carro = _carroRepository.GetByPlaca(placa);
 
             if (carro == null) {
-
                 return NotFound("Veículo não encontrado.");
             }
 

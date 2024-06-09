@@ -17,13 +17,13 @@ public partial class Usuario
 
     public Usuario() { }
 
-    public string Email { get; set; } = null!;
+    public string? Email { get; set; } = null!;
 
     public string? Senha { get; set; }
 
-    public string PessoaCpf { get; set; } = null!;
+    public string? PessoaCpf { get; set; } = null!;
 
-    public string Tipo { get; set; } = null!;
+    public string? Tipo { get; set; } = null!;
 
     public virtual Pessoa PessoaCpfNavigation { get; set; } = null!;
 }

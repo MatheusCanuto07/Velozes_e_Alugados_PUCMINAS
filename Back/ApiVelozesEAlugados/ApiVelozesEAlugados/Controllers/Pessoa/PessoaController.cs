@@ -66,6 +66,5 @@ namespace ApiVelozesEAlugados.Controllers.Pessoa
 
             return Ok(pessoa);
         }
-
-    }
+    } 
 }

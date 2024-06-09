@@ -1,10 +1,32 @@
 ﻿using Microsoft.VisualBasic;
+using PessoaNamespace;
 using UsuarioName;
 
 namespace ApiVelozesEAlugados.Application.ViewModel
 {
     public class PessoaViewModel
     {
+        public PessoaViewModel(Usuario u, Pessoa p)
+        {
+            this.CPF = p.Cpf;
+            this.NOME_PESSOA = p.NomePessoa;
+            this.DATA_NASCIMENTO = p.DataNascimento;
+            this.CNH_PESSOA = p.CnhPessoa;
+            this.CEP_PESSOA = p.CepPessoa;
+            this.LOGRADOURO = p.Logradouro;
+            this.NUMERO = p.Numero;
+            this.COMPLEMENTO = p.Complemento;
+            this.BAIRRO = p.Bairro;
+            this.CIDADE = p.Cidade;
+            this.UF = p.Uf;
+            this.SEXO = p.Sexo;
+            this.TIPO = u.Tipo;
+            this.Email = u.Email;
+            this.Senha = u.Senha;
+        }
+
+        public PessoaViewModel() { }
+
         public string CPF { get; set; }
         public string? NOME_PESSOA { get; set; }
         public DateTime? DATA_NASCIMENTO { get; set; }

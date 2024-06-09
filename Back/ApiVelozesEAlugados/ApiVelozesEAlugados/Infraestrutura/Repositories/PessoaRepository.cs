@@ -15,12 +15,32 @@ namespace ApiVelozesEAlugados.Infraestrutura.Repositories
 
         public List<Pessoa> Get()
         {
-            return _Contexto.pessoa.ToList();
+            return _Contexto.Pessoa.ToList();
         }
 
         public Pessoa GetID(string email, string senha)
         {
             throw new NotImplementedException();
+        }
+
+        public PessoaViewModel GetByCpfUsuario(string cpf)
+        {
+            Pessoa p = _Contexto.Pessoa.FirstOrDefault(p => p.Cpf == cpf);
+            Usuario u = _Contexto.Usuario.FirstOrDefault(u => u.PessoaCpf == cpf);
+
+            if (p == null)
+            {
+                throw new KeyNotFoundException("Pessoa not found.");
+            }
+
+            if (u == null)
+            {
+                throw new KeyNotFoundException("Usuario not found.");
+            }
+
+            PessoaViewModel pessoaView = new PessoaViewModel(u, p);
+
+            return pessoaView;
         }
 
         public void add(PessoaViewModel pessoa)
@@ -59,11 +79,26 @@ namespace ApiVelozesEAlugados.Infraestrutura.Repositories
             _Contexto.SaveChanges();
         }
 
-        public Pessoa GetByCpf(string cpf)
+        public PessoaViewModel GetByCpf(string cpf)
         {
-            return _Contexto.Pessoa.FirstOrDefault(p => p.Cpf == cpf);
-        }
+            Pessoa p = _Contexto.Pessoa.FirstOrDefault(p => p.Cpf == cpf);
+            Usuario u = _Contexto.Usuario.FirstOrDefault(u => u.PessoaCpf == cpf);
 
+            if (p == null)
+            {
+                throw new KeyNotFoundException("Pessoa not found.");
+            }
+
+            if (u == null)
+            {
+                throw new KeyNotFoundException("Usuario not found.");
+            }
+
+            PessoaViewModel pessoaView = new PessoaViewModel(u, p);
+
+            return pessoaView;
+
+        }
 
     }
 }
