@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic;
+using UsuarioName;
 
 namespace ApiVelozesEAlugados.Application.ViewModel
 {
@@ -16,5 +17,8 @@ namespace ApiVelozesEAlugados.Application.ViewModel
         public string? CIDADE { get; set; }
         public string? UF { get; set; }
         public string? SEXO { get; set; }
+        public string? TIPO { get; set;}
+        public string? Email { get; set; }
+        public string? Senha { get; set; }
     }
 }

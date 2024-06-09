@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic;
 using Org.BouncyCastle.Cms;
 using PessoaNamespace;
+using UsuarioName;
 
 namespace ApiVelozesEAlugados.Infraestrutura.Repositories
 {
@@ -25,8 +26,10 @@ namespace ApiVelozesEAlugados.Infraestrutura.Repositories
         public void add(PessoaViewModel pessoa)
         {
             Pessoa p = new Pessoa(pessoa);
+            Usuario u = new Usuario(pessoa);
 
             _Contexto.Pessoa.Add(p);
+            _Contexto.Usuario.Add(u);
             
             _Contexto.SaveChanges();
         }

@@ -1,42 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\",
+  "WorkspaceRootPath": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|c:\\cursos\\sistema de informa\u00E7\u00E3o\\1_2024\\diciplinas\\tiapn\\trabalho_final\\back\\apivelozesealugados\\apivelozesealugados\\infraestrutura\\repositories\\carrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\infraestrutura\\repositories\\carrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|c:\\cursos\\sistema de informa\u00E7\u00E3o\\1_2024\\diciplinas\\tiapn\\trabalho_final\\back\\apivelozesealugados\\apivelozesealugados\\domain\\models\\carros\\icarrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\domain\\models\\carros\\icarrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|c:\\cursos\\sistema de informa\u00E7\u00E3o\\1_2024\\diciplinas\\tiapn\\trabalho_final\\back\\apivelozesealugados\\apivelozesealugados\\controllers\\carros\\carrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\controllers\\carros\\carrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|c:\\cursos\\sistema de informa\u00E7\u00E3o\\1_2024\\diciplinas\\tiapn\\trabalho_final\\back\\apivelozesealugados\\apivelozesealugados\\infraestrutura\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\infraestrutura\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|c:\\cursos\\sistema de informa\u00E7\u00E3o\\1_2024\\diciplinas\\tiapn\\trabalho_final\\back\\apivelozesealugados\\apivelozesealugados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|c:\\cursos\\sistema de informa\u00E7\u00E3o\\1_2024\\diciplinas\\tiapn\\trabalho_final\\back\\apivelozesealugados\\apivelozesealugados\\domain\\models\\pessoa\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\domain\\models\\pessoa\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|c:\\cursos\\sistema de informa\u00E7\u00E3o\\1_2024\\diciplinas\\tiapn\\trabalho_final\\back\\apivelozesealugados\\apivelozesealugados\\controllers\\pessoa\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|e:\\trabalhos puc\\trabalho interdisciplinar aplicacoes para processos de negocios\\back\\apivelozesealugados\\apivelozesealugados\\controllers\\pessoa\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\controllers\\pessoa\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|c:\\cursos\\sistema de informa\u00E7\u00E3o\\1_2024\\diciplinas\\tiapn\\trabalho_final\\back\\apivelozesealugados\\apivelozesealugados\\domain\\models\\carros\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\domain\\models\\carros\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\apivelozesealugados\\infraestrutura\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\infraestrutura\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|c:\\cursos\\sistema de informa\u00E7\u00E3o\\1_2024\\diciplinas\\tiapn\\trabalho_final\\back\\apivelozesealugados\\apivelozesealugados\\viewmodel\\viewcarro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\viewmodel\\viewcarro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\apivelozesealugados\\domain\\models\\pessoa\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\domain\\models\\pessoa\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|e:\\trabalhos puc\\trabalho interdisciplinar aplicacoes para processos de negocios\\back\\apivelozesealugados\\apivelozesealugados\\domain\\models\\usuario\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\domain\\models\\usuario\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|e:\\trabalhos puc\\trabalho interdisciplinar aplicacoes para processos de negocios\\back\\apivelozesealugados\\apivelozesealugados\\application\\viewmodel\\pessoaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\application\\viewmodel\\pessoaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Program.cs",
-              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Program.cs",
-              "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Program.cs",
-              "RelativeToolTip": "ApiVelozesEAlugados\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Usuario\\Usuario.cs",
+              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Domain\\Models\\Usuario\\Usuario.cs",
+              "ToolTip": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Usuario\\Usuario.cs",
+              "RelativeToolTip": "ApiVelozesEAlugados\\Domain\\Models\\Usuario\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T23:07:36.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CarroController.cs",
-              "DocumentMoniker": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Controllers\\Carros\\CarroController.cs",
-              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Controllers\\Carros\\CarroController.cs",
-              "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Controllers\\Carros\\CarroController.cs",
-              "RelativeToolTip": "ApiVelozesEAlugados\\Controllers\\Carros\\CarroController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAIwCgAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T22:23:17.586Z",
+              "WhenOpened": "2024-06-09T15:26:05.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CarroRepository.cs",
-              "DocumentMoniker": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
-              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
-              "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
-              "RelativeToolTip": "ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAwwDMAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T21:54:21.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "PessoaController.cs",
-              "DocumentMoniker": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Controllers\\Pessoa\\PessoaController.cs",
+              "DocumentMoniker": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Controllers\\Pessoa\\PessoaController.cs",
               "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Controllers\\Pessoa\\PessoaController.cs",
-              "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Controllers\\Pessoa\\PessoaController.cs",
+              "ToolTip": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Controllers\\Pessoa\\PessoaController.cs",
               "RelativeToolTip": "ApiVelozesEAlugados\\Controllers\\Pessoa\\PessoaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T19:27:54.26Z",
+              "WhenOpened": "2024-06-09T14:35:44.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IPessoaRepository.cs",
-              "DocumentMoniker": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Pessoa\\IPessoaRepository.cs",
-              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Domain\\Models\\Pessoa\\IPessoaRepository.cs",
-              "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Pessoa\\IPessoaRepository.cs",
-              "RelativeToolTip": "ApiVelozesEAlugados\\Domain\\Models\\Pessoa\\IPessoaRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "PessoaViewModel.cs",
+              "DocumentMoniker": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Application\\ViewModel\\PessoaViewModel.cs",
+              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Application\\ViewModel\\PessoaViewModel.cs",
+              "ToolTip": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Application\\ViewModel\\PessoaViewModel.cs",
+              "RelativeToolTip": "ApiVelozesEAlugados\\Application\\ViewModel\\PessoaViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T19:16:12.106Z",
+              "WhenOpened": "2024-06-09T15:25:24.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ICarroRepository.cs",
-              "DocumentMoniker": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Carros\\ICarroRepository.cs",
-              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Domain\\Models\\Carros\\ICarroRepository.cs",
-              "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Carros\\ICarroRepository.cs",
-              "RelativeToolTip": "ApiVelozesEAlugados\\Domain\\Models\\Carros\\ICarroRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T21:26:37.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "PessoaRepository.cs",
-              "DocumentMoniker": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Infraestrutura\\Repositories\\PessoaRepository.cs",
+              "DocumentMoniker": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Infraestrutura\\Repositories\\PessoaRepository.cs",
               "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Infraestrutura\\Repositories\\PessoaRepository.cs",
-              "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Infraestrutura\\Repositories\\PessoaRepository.cs",
+              "ToolTip": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Infraestrutura\\Repositories\\PessoaRepository.cs",
               "RelativeToolTip": "ApiVelozesEAlugados\\Infraestrutura\\Repositories\\PessoaRepository.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAIwDwAAABEAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAlwBkAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T19:12:47.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Carro.cs",
-              "DocumentMoniker": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Carros\\Carro.cs",
-              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Domain\\Models\\Carros\\Carro.cs",
-              "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Carros\\Carro.cs",
-              "RelativeToolTip": "ApiVelozesEAlugados\\Domain\\Models\\Carros\\Carro.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "DocumentIndex": 2,
+              "Title": "IPessoaRepository.cs",
+              "DocumentMoniker": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Pessoa\\IPessoaRepository.cs",
+              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Domain\\Models\\Pessoa\\IPessoaRepository.cs",
+              "ToolTip": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Pessoa\\IPessoaRepository.cs",
+              "RelativeToolTip": "ApiVelozesEAlugados\\Domain\\Models\\Pessoa\\IPessoaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T21:16:47.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ViewCarro.cs",
-              "DocumentMoniker": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\ViewModel\\ViewCarro.cs",
-              "RelativeDocumentMoniker": "ApiVelozesEAlugados\\ViewModel\\ViewCarro.cs",
-              "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\ViewModel\\ViewCarro.cs",
-              "RelativeToolTip": "ApiVelozesEAlugados\\ViewModel\\ViewCarro.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T21:17:44.548Z",
+              "WhenOpened": "2024-06-08T19:16:12.106Z",
               "EditorCaption": ""
             }
           ]

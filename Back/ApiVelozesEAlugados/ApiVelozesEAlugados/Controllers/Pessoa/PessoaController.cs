@@ -27,12 +27,13 @@ namespace ApiVelozesEAlugados.Controllers.Pessoa
         }
 
         [HttpPost]
-        public IActionResult add(PessoaViewModel PessoaView)
+        public IActionResult add(PessoaViewModel pessoa)
         {
-            _pessoaRepositorio.add(PessoaView);
+            _pessoaRepositorio.add(pessoa);
 
             return Ok();
         }
+
         [HttpPut("{cpf}")]
         public IActionResult Put(string cpf, [FromBody] PessoaViewModel pessoaViewModel)
         {
