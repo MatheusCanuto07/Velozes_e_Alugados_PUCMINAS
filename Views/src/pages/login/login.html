@@ -24,26 +24,29 @@
     <section>
       <div class="form-box">
         <div class="form-value" id="login">
+
           <h2>Login</h2>
           <div class="inputbox">
             <a>E-mail</a>
-            <!--<label for="" id="email_imput">Email</label>-->
-            <input id="email" type="email" required>
+            <input class="inputDanger" id="email" type="email" required>
+            <p class="text-danger d-none" id="emailVazio">*O campo não pode estar vazio</p>
+            <p class="text-danger d-none" id="emailLongo">*O tamanho do e-mail deve ser entre 5 e 254 caracteres</p>
+            <p class="text-danger d-none" id="emailValido">*O e-mail informado não é um e-mail</p>
           </div>
+
           <div class="inputbox">
             <a>Senha</a>
-            <!-- <label for="" id="senha_imput">Senha</label>-->
-
             <input id="senha" type="password" required>
+            <p class="text-danger d-none" id="senhaVazia">*Digite 8 caracteres ou mais</p>
+            <p class="text-danger d-none" id="senhaTamanho">*O tamanho da senha é inválido</p>
           </div>
-
 
           <div class="recuperar">
             <a href="#">Esqueci minha senha</a>
           </div>
 
           <div class="botoes">
-            <a  id="btn-entra" class="entrar">
+            <a id="btn-entra" class="entrar">
               <p>
                 Entrar
               </p>
