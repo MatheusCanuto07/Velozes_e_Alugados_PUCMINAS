@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 ﻿using ApiVelozesEAlugados.Application.ViewModel;
 using CarroName;
+=======
+﻿using CarroName;
+>>>>>>> developer
 
 namespace ApiVelozesEAlugados.Domain.Models.Relacoes
 {
     public interface IAlugaDevolve
     {
+<<<<<<< HEAD
         void add(AlugaDevolveViewModel alugadevolve);
         List<AlugaDevolve> Get();
 
@@ -12,5 +17,8 @@ namespace ApiVelozesEAlugados.Domain.Models.Relacoes
 
 
         void Update(int codlocacao, AlugaDevolveViewModel alugadevolve);
+=======
+        List<AlugaDevolve> Get();
+>>>>>>> developer
     }
 }

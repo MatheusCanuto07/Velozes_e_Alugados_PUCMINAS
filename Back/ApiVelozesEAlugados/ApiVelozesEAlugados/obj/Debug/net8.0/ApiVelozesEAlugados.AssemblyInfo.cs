@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiVelozesEAlugados")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af7fb5bb66dc6b605d7aaf0977de2189d30f0ecc")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec86b279b852aeb634590be17518f198398f88d2")]
+>>>>>>> developer
 [assembly: System.Reflection.AssemblyProductAttribute("ApiVelozesEAlugados")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiVelozesEAlugados")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
