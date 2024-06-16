@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var dadosRecuperados = JSON.parse(sessionStorage.getItem('dadosUsuario'));
   var usuario = JSON.parse(dadosRecuperados);
 
+  tipo = "Funcionario";
+
   var menu_adm = document.getElementById("menu_adm");
   console.log(usuario.email);
 
@@ -13,11 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
         </a>
         
         <div class="d-flex flex-column align-items-center">
-          <button class="btn-editar"><p>Editar Propagandas e Novidades</p></button>
+          <button class="btn-editar"><a href="cadastrar_veiculo/cadastrar.html"><p>Cadastrar veículos</p></a></button>
           <button class="btn-editar"><a href="editar/Veiculos/editar_veiculos.html"><p>Editar veículos</p></a></button>
-          <button class="btn-editar"><p>Editar usuários</p></button>
         </div>
-        <button class="btn-visao-geral"><p>Visão geral</p></button>
+        <button class="btn-visao-geral"><a href="../menu_principal/menu_inicial.html"><p>Home</p></a></button>
       </div>
       `
   if(usuario.tipo == "Funcionario"){

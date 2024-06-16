@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\infraestrutura\\repositories\\carrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|e:\\trabalhos puc\\trabalho interdisciplinar aplicacoes para processos de negocios\\back\\apivelozesealugados\\apivelozesealugados\\domain\\models\\carros\\icarrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\apivelozesealugados\\domain\\models\\carros\\icarrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\domain\\models\\carros\\icarrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|e:\\trabalhos puc\\trabalho interdisciplinar aplicacoes para processos de negocios\\back\\apivelozesealugados\\apivelozesealugados\\controllers\\carros\\carrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\apivelozesealugados\\controllers\\carros\\carrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA9CD058-FA39-4135-82EA-4B5042A61C4A}|ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj|solutionrelative:apivelozesealugados\\controllers\\carros\\carrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,8 +34,7 @@
               "RelativeToolTip": "ApiVelozesEAlugados\\Domain\\Models\\Carros\\ICarroRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T01:31:10.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T01:31:10.267Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
               "ToolTip": "E:\\Trabalhos Puc\\Trabalho Interdisciplinar Aplicacoes para processos de negocios\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
               "RelativeToolTip": "ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADoAAAAxAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAlwBIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T01:58:46.098Z",
               "EditorCaption": ""
@@ -60,8 +59,7 @@
               "RelativeToolTip": "ApiVelozesEAlugados\\Controllers\\Carros\\CarroController.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAASwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T01:30:34.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T01:30:34.869Z"
             }
           ]
         }

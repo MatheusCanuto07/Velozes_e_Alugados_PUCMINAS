@@ -78,3 +78,6 @@ body {
 input{
   width: 90px;
 }
+label{
+  color: white;
+}

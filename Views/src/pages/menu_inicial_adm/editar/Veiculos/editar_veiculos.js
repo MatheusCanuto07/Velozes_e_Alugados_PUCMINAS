@@ -15,10 +15,8 @@ function carregaDados() {
     .then(result => {
       var str = "";
       if (result.status === 200) {
-        console.log(result.body);
         var carros = JSON.parse(result.body);
         carros.forEach(carro => {
-          console.log(carro);
           str += `
           <tr>
             <th scope="row">
@@ -33,7 +31,7 @@ function carregaDados() {
             <td><input type="text" class="${carro.placa}" value="${carro.precoKm}"></td>
             <td><input type="text" class="${carro.placa}" value="${carro.precoDiaria}"></td>
             <td><input type="text" class="${carro.placa}" value="${carro.observacoes}"></td>
-            <td><button class="btn btn-warning" class="${carro.placa}" onclick="editaCarro('${carro.placa}')">Editar</button></td>
+            <td><button class="btn btn-warning" id="${carro.placa}" class="${carro.placa}" onclick="editaCarro('${carro.placa}')">Editar</button></td>
             <td><button class="btn btn-danger" onclick="deletaCarro('${carro.placa}')">Apagar</button></td>
           </tr>
           `;
@@ -42,10 +40,10 @@ function carregaDados() {
         body_table_carros.innerHTML = str;
 
         // Seleciona todos os elementos input na página
-        const inputs = document.querySelectorAll('input');
+        const Todosinputs = document.querySelectorAll('input');
 
         // Itera sobre todos os inputs e os desabilita
-        inputs.forEach(input => {
+        Todosinputs.forEach(input => {
           input.disabled = true;
         });
 
@@ -82,47 +80,68 @@ function deletaCarro(placa) {
 }
 
 function editaCarro(placa) {
-  const inputs = document.querySelectorAll('.' + placa);
-
-  // Itera sobre os inputs selecionados
-  inputs.forEach(input => {
-    input.disabled = false;
-  });
-
-  const carro = {
-    placa: 'ABC1234',
-    modelo: 'Civic',
-    marca: 'Honda',
-    cor: 'Prata',
-    ano: 2020,
-    km: 10000,
-    disponibilidade: 1,
-    precoKm: 1.5,
-    precoDiaria: 150,
-    observacoes: 'Nenhuma'
-  };
-
   // URL da API e placa do carro que você quer editar
-  const url = `sua_url_da_api/carros/${carro.placa}`;
+  const url = `https://localhost:7090/api/Carro`;
+  var botao = document.getElementById(placa);
+  console.log(botao.innerHTML);
 
-  // Requisição PUT
-  fetch(url, {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(carro) // Converte o objeto carro para JSON
-  })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Erro ao editar o carro: ${response.status} - ${response.statusText}`);
-      }
-      console.log('Carro editado com sucesso.');
-      // Faça algo após a edição, se necessário
+  var inputs = document.querySelectorAll('.' + placa);
+  inputArray = [...inputs];
+
+  if (botao.innerHTML == "Enviar") {
+    var carro = {
+      placa: inputArray[0].value,
+      modelo: inputArray[1].value,
+      marca: inputArray[2].value,
+      cor: inputArray[3].value,
+      ano: parseInt(inputArray[4].value),
+      km: parseInt(inputArray[5].value),
+      disponibilidade: parseInt(inputArray[6].value),
+      precoKm: parseInt(inputArray[7].value),
+      precoDiaria: parseInt(inputArray[8].value),
+      observacoes: inputArray[9].value
+    };
+
+    carroConvertido = JSON.stringify(carro);
+    console.log(carroConvertido);
+
+    fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: carroConvertido // Converte o objeto carro para JSON
     })
-    .catch(error => {
-      console.error('Erro ao tentar editar o carro:', error);
-      // Trate o erro conforme necessário
+      .then(response => {
+        
+        if (!response.ok) {
+          throw new Error(`Erro ao editar o carro: ${response.status} - ${response.statusText}`);
+        }
+
+        inputs.forEach(input => {
+          input.disabled = true;
+        });
+
+        botao.className = '';
+        botao.classList.add('btn', 'btn-warning');
+        botao.innerHTML = "Editar";
+        alert('Carro editado com sucesso.');
+      })
+      .catch(error => {
+        console.error('Erro ao tentar editar o carro:', error);
+        // Trate o erro conforme necessário
+      });
+  } else {
+    botao.innerHTML = "Enviar";
+    botao.className = '';
+    botao.classList.add('btn', 'btn-success');
+
+    inputs.forEach(input => {
+      input.disabled = false;
     });
+    
+  }
+
+
 
 }
