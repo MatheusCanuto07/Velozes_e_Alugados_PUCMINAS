@@ -36,7 +36,7 @@ namespace ApiVelozesEAlugados.Controllers.Usuario
                 return Unauthorized("Email ou senha incorretos.");
             }
 
-            return Ok("Login bem-sucedido.");
+            return Ok(usuario);
         }
     }
 }
