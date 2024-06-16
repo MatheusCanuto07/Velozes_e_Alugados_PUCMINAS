@@ -2,6 +2,7 @@
 using ApiVelozesEAlugados.Domain.Models;
 using CarroName;
 using ICarroRepositoryNameSpace;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiVelozesEAlugados.Infraestrutura.Repositories
 {
@@ -19,6 +20,19 @@ namespace ApiVelozesEAlugados.Infraestrutura.Repositories
 
         }
 
+        public void delete(string placa)
+        {
+            var existeCarro = _Contexto.Carro.Include(c => c.AlugaDevolve).FirstOrDefault(c => c.Placa == placa);
+
+            if (existeCarro == null)
+            {
+                throw new Exception("Carro não encontrado.");
+            }
+            _Contexto.AlugaDevolve.RemoveRange(existeCarro.AlugaDevolve);
+            _Contexto.Carro.Remove(existeCarro);
+            _Contexto.SaveChanges();
+        }
+
         public List<Carro> Get()
         {
             return _Contexto.Carro.ToList();
@@ -30,9 +44,9 @@ namespace ApiVelozesEAlugados.Infraestrutura.Repositories
 
         }
 
-        public void Update(string _placa, CarroViewModel carroViewModel)
+        public void Update(CarroViewModel carroViewModel)
         {
-            var existeCarro = _Contexto.Carro.FirstOrDefault(c=> c.Placa == _placa);
+            var existeCarro = _Contexto.Carro.FirstOrDefault(c=> c.Placa == carroViewModel.Placa);
 
             if (existeCarro == null)
             {

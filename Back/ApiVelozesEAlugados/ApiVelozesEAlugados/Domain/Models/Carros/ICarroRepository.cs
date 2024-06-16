@@ -8,11 +8,9 @@ namespace ICarroRepositoryNameSpace
     {
         void add(CarroViewModel carro);
         List<Carro> Get();
-
+        void delete(string placa);
         Carro GetByPlaca(string placa);
-        
-
-        void Update(string placa, CarroViewModel carro);
+        void Update(CarroViewModel carro);
     }
 }
 
