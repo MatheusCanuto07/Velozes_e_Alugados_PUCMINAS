@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using ApiVelozesEAlugados.Domain.Models.Relacoes;
+using AlugaDevolveNameSpace;
 using PessoaNamespace;
 
 namespace ClienteName;

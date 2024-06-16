@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using ApiVelozesEAlugados.Domain.Models.Relacoes;
 using Microsoft.EntityFrameworkCore;
 using Relacoes;
 using ApiVelozesEAlugados.ViewModel;
 using ApiVelozesEAlugados.Application.ViewModel;
+using AlugaDevolveNameSpace;
 
 namespace CarroName;
 

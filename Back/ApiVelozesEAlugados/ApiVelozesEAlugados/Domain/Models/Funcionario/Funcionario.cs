@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using ApiVelozesEAlugados.Domain.Models.Relacoes;
 using Relacoes;
 using PessoaNamespace;
 

@@ -10,6 +10,7 @@ using ApiVelozesEAlugados.Infraestrutura.Repositories;
 using IPessoaRepositoryNameSpace;
 using ApiVelozesEAlugados.Domain.Models.UsuarioRe;
 using ICarroRepositoryNameSpace;
+using AlugaDevolveNameSpace;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,4 +1,5 @@
-﻿using ApiVelozesEAlugados.Application.ViewModel;
+﻿using AlugaDevolveNameSpace;
+using ApiVelozesEAlugados.Application.ViewModel;
 using  CarroName;
 
 
@@ -11,6 +12,7 @@ namespace ICarroRepositoryNameSpace
         void delete(string placa);
         Carro GetByPlaca(string placa);
         void Update(CarroViewModel carro);
+        void AlugarCarro(AlugaDevolveViewModel Alugar);
     }
 }
 

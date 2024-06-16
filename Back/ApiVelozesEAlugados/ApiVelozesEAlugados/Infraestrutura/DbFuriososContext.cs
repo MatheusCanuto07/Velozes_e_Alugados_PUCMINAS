@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using ApiVelozesEAlugados.Domain.Models.Relacoes;
+using AlugaDevolveNameSpace;
 using CarroName;
 using ClienteName;
 using FuncionarioNameSpace;
@@ -98,7 +98,7 @@ public partial class DbFuriososContext : DbContext
             entity.HasIndex(e => e.CarroPlaca, "fk_ALUGA_DEVOLVE_CARRO1_idx");
 
             entity.HasIndex(e => e.ClientePessoaCpf, "fk_ALUGA_DEVOLVE_CLIENTE1_idx");
-
+        
             entity.Property(e => e.CodLocacao)
                 .ValueGeneratedNever()
                 .HasColumnName("COD_LOCACAO");

@@ -1,15 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using ApiVelozesEAlugados.Application.ViewModel;
 using CarroName;
 using ClienteName;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace ApiVelozesEAlugados.Domain.Models.Relacoes;
+namespace AlugaDevolveNameSpace;
 
 [Keyless]
 public partial class AlugaDevolve
 {
+    public AlugaDevolve() { 
+        
+    }
+
+    public AlugaDevolve(AlugaDevolveViewModel AViewModel)
+    {
+        CodLocacao = AViewModel.CodLocacao;
+        ClientePessoaCpf = AViewModel.Cliente_pessoa_cpf;
+        CarroPlaca = AViewModel.Carro_placa;
+        DataInicio = AViewModel.dataInicio;
+        DataFim = AViewModel.dataFim;
+        ValorTotal = AViewModel.ValorTotal;
+        KmInicial = AViewModel.KmInicial;
+        KmFinal = AViewModel.KmFinal;
+        InfoLocacao = AViewModel.InfoLocacao;
+    }
 
     public int CodLocacao { get; set; }
 

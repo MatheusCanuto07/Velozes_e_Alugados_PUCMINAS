@@ -1,4 +1,5 @@
-﻿using ApiVelozesEAlugados.Application.ViewModel;
+﻿using AlugaDevolveNameSpace;
+using ApiVelozesEAlugados.Application.ViewModel;
 using ApiVelozesEAlugados.Domain.Models;
 using CarroName;
 using ICarroRepositoryNameSpace;
@@ -18,6 +19,23 @@ namespace ApiVelozesEAlugados.Infraestrutura.Repositories
 
             _Contexto.SaveChanges();
 
+        }
+
+        public void AlugarCarro(AlugaDevolveViewModel Alugar)
+        {
+            var carroAlugado = _Contexto.Carro.FirstOrDefault(c => c.Placa == Alugar.Carro_placa);
+
+            if (carroAlugado == null) {
+                throw new Exception("Carro não encontrado.");
+            }
+
+            carroAlugado.Disponibilidade = 0;            
+
+            AlugaDevolve alugaDevolve = new AlugaDevolve(Alugar);
+
+            _Contexto.Carro.Update(carroAlugado);
+            _Contexto.AlugaDevolve.Add(alugaDevolve);
+            _Contexto.SaveChanges();
         }
 
         public void delete(string placa)

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using CarroName;
 using ApiVelozesEAlugados.Domain.Models;
 using ICarroRepositoryNameSpace;
+using AlugaDevolveNameSpace;
 
 
 namespace ApiVelozesEAlugados.Controllers.Carros
@@ -74,5 +75,14 @@ namespace ApiVelozesEAlugados.Controllers.Carros
 
             return Ok("Carro deletado com sucesso");
         }
+
+        [HttpPost]
+        [Route("/Alugar")]
+        public IActionResult alugarCarro(AlugaDevolveViewModel a)
+        {
+            _carroRepository.AlugarCarro(a);
+            return Ok("Aluguel realizado com sucesso!");
+        }
+
     }
 }
