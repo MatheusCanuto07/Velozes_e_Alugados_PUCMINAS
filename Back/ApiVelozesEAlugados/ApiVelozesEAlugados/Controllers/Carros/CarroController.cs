@@ -68,5 +68,16 @@ namespace ApiVelozesEAlugados.Controllers.Carros
 
             return Ok(carro);
         }
+
+        [HttpDelete]
+        [Route("{placa}")]
+        public IActionResult deleteCarro(string placa)
+        {
+
+            
+            _carroRepository.delete(placa);
+
+            return Ok("Carro deletado com sucesso");
+        }
     }
 }

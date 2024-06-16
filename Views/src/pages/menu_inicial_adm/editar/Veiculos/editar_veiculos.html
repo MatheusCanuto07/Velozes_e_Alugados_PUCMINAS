@@ -27,36 +27,45 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
+  <main class="container">
+    <div class="row justify-content-center">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Placa</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Cor</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Quilometragem do carro</th>
+            <th scope="col">Disponibilidade</th>
+            <th scope="col">Preço por KM</th>
+            <th scope="col">Preço na diária</th>
+            <th scope="col">Observações</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Apagar</th>
+          </tr>
+        </thead>
+        <tbody id="body_table_carros">
+          <tr>
+            <th scope="row">
+              <input type="text" value="">
+            </th>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><button class="btn btn-warning">Editar</button></td>
+            <td><button class="btn btn-danger">Apagar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
   <footer>
     <div class="colunas">
