@@ -33,12 +33,12 @@
         <div class="container">
             <div class="car">
                <h1>Informações do Carro</h1>
-                <img class="car-image" src="../../assets/imgs/carro_vapor_la_marquise-1024372069.jpg" alt="Car Image">
+                <img class="car-image" id="imagem-carro"  alt="Car Image">
             </div>
             
             <div class="vehicle-info">
-                <h2 class="vehicle-name">Nome do veículo</h2>
-                <p class="indisponivel">Veículo Indisponível</p>
+                <h2 class="vehicle-name" id="marca-modelo"></h2>
+                <p class="indisponivel" id="disponibilidade"></p>
                 <div class="rating">
                     <span class="star">&#9733;</span>
                     <span class="star">&#9733;</span>
@@ -46,18 +46,17 @@
                     <span class="star">&#9733;</span>
                     <span class="star">&#9734;</span>
                 </div>
-                <p class="price">R$ 000,00</p>
+                <!--  <p class="price">R$ 000,00</p>-->
                 <hr>
                 <div class="details">
-                    <p>Lugares: 5</p>
-                    <p>Ar-condicionado: Sim</p>
-                    <p>Câmbio: Manual</p>
-                    <p>Portas: 4</p>
-                    <p>Airbag: Sim</p>
-                    <p>Malas: 1</p>
-                    <p>Direção: Hidráulica</p>
-                    <p>Trava elétrica: Sim</p>
-                </div>
+                    <p id="ano"></p>
+                    <p id="cor"></p>
+                    <p id="km"></p>
+                    <p id="preco-kkm"></p>
+                    <p id="preco-diaria"></p>
+                    
+                
+                </div> 
                 <hr>
                 <div class="incluso">
                     <h3>Incluso no valor</h3>
@@ -69,7 +68,7 @@
                     </ul>
                 </div>
                 <label>
-                    <input type="checkbox"> Me avise quando estiver disponível
+                   <!-- <input type="checkbox"> Me avise quando estiver disponível-->
                 </label>
                 <a class="button" href="browse-cars.html">Alugar</a>
             </div>
@@ -112,6 +111,7 @@
         </div>
         <div class="info"> &copy; 2024 - Todos os direitos reservados</div>
     </footer>
+    <script src="info_carro.js"></script>
 </body>
 
 </html>

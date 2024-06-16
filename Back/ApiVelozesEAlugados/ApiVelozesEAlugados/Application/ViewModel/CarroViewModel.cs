@@ -21,5 +21,6 @@
         public decimal? PrecoDiaria { get; set; }
 
         public string? Observacoes { get; set; }
+        public string? Endereco_imagem { get; set; }
     }
 }

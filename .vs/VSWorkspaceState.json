@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Views",
+    "\\Views\\src",
+    "\\Views\\src\\pages"
   ],
+  "SelectedNode": "\\Views\\src\\pages\\menu_principal",
   "PreviewInSolutionExplorer": false
 }

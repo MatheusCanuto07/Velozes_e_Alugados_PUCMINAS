@@ -4,6 +4,7 @@ using CarroName;
 using ClienteName;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace ApiVelozesEAlugados.Domain.Models.Relacoes;
 
 [Keyless]
@@ -16,9 +17,9 @@ public partial class AlugaDevolve
 
     public string CarroPlaca { get; set; } = null!;
 
-    public DateOnly? DataInicio { get; set; }
+    public DateTime? DataInicio { get; set; }
 
-    public DateOnly? DataFim { get; set; }
+    public DateTime? DataFim { get; set; }
 
     public decimal? ValorTotal { get; set; }
 

@@ -27,6 +27,8 @@ public partial class Carro
         this.PrecoKm = cmv.PrecoKm;
         this.PrecoDiaria = cmv.PrecoDiaria;
         this.Observacoes = cmv.Observacoes;
+        this.Endereco_imagem = cmv.Endereco_imagem;
+        
     }
     public string Placa { get; set; } = null!;
 
@@ -47,6 +49,7 @@ public partial class Carro
     public decimal? PrecoDiaria { get; set; }
 
     public string? Observacoes { get; set; }
+    public string? Endereco_imagem { get; set; }
 
     public virtual ICollection<Alteracao> Alteracao { get; set; } = new List<Alteracao>();
 
