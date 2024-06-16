@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
               <td>${carro.precoKm}</td>
               <td>${carro.precoDiaria}</td>
               <td>${carro.observacoes}</td>
-              
             </tr>
           `;
         });

@@ -35,22 +35,17 @@ namespace ApiVelozesEAlugados.Controllers.Carros
 
         }
 
-        [HttpPut("{placa}")]
-        public IActionResult Put(string _placa, [FromBody] CarroViewModel carroViewModel) {
+        [HttpPut]
+        public IActionResult Put([FromBody] CarroViewModel carroViewModel) {
 
-            if (_placa != carroViewModel.Placa) {
-
-                return BadRequest("Placa informada não existe na base de dados.");
-            }
-
-            var existeCarro = _carroRepository.Get().FirstOrDefault(c => c.Placa == _placa);
+            var existeCarro = _carroRepository.Get().FirstOrDefault(c => c.Placa == carroViewModel.Placa);
             if (existeCarro == null) { 
                 
                 return NotFound("Viéculo não encontrado.");
 
            }
 
-            _carroRepository.Update(_placa, carroViewModel);
+            _carroRepository.Update(carroViewModel);
 
             return Ok();
 

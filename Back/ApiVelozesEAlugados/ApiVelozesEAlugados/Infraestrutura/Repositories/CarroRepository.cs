@@ -44,9 +44,9 @@ namespace ApiVelozesEAlugados.Infraestrutura.Repositories
 
         }
 
-        public void Update(string _placa, CarroViewModel carroViewModel)
+        public void Update(CarroViewModel carroViewModel)
         {
-            var existeCarro = _Contexto.Carro.FirstOrDefault(c=> c.Placa == _placa);
+            var existeCarro = _Contexto.Carro.FirstOrDefault(c=> c.Placa == carroViewModel.Placa);
 
             if (existeCarro == null)
             {
