@@ -31,6 +31,7 @@ function preencherDetalhes(carro) {
     const corCarro = document.getElementById('cor');
     const precoKm = document.getElementById('preco-kkm');
     const imagemCarro = document.getElementById('imagem-carro');
+    const btnAlugar = document.getElementById('alugar');
 
     nomeCarro.textContent = `${carro.modelo} / ${carro.marca}`;
     disponibilidadeCarro.textContent = carro.disponibilidade == 1 ? 'Veículo Disponível' : 'Veículo Indisponível';
@@ -40,4 +41,5 @@ function preencherDetalhes(carro) {
     corCarro.textContent = `Cor: ${carro.cor}`;
     precoKm.textContent = `Preço por Km: R$ ${carro.precoKm}`;
     imagemCarro.src = carro.endereco_imagem;
+    btnAlugar.innerHTML = `<a class="button" href="../Aluguel/aluguel.html?placa=${carro.placa}">Alugar</a>`;
 }

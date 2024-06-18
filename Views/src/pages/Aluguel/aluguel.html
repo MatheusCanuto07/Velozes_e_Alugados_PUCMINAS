@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Responsiva</title>
     <link rel="stylesheet" href="aluguel.css">
-    <script src="menuPrincipal.js" defer></script>
+    
     <script src="https://kit.fontawesome.com/20fc102c04.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -35,33 +35,33 @@
                 <div class="divisao1">
                   <div class="inputbox">
                     <a>Nome do Cliente</a>  
-                      <input type="text" required>
+                      <input type="text" id="nome" required>
                   </div>                    
                   <div class="inputbox">
                     <a>Placa</a>
-                      <input type="text" required>
+                      <input type="text" id="placa" required>
                   </div>
                 </div>
 
                 <div class="divisao2">
                   <div class="inputbox">
                     <a>Valor Total</a>
-                      <input type="text" required>
+                      <input type="text" name="valorTotal" required>
                   </div>
                   <div class="inputbox">
                     <a>Observação</a>
-                      <input type="text" required>
+                      <input type="text" name="infoLocacao" required>
                   </div>
                 </div>
 
                 <div class="divisao3">
                     <div class="inputbox">
                       <a>Data incial</a>
-                        <input type="date" required>
+                        <input type="date" name="dataInicio" required>
                     </div>
                     <div class="inputbox">
                       <a>Data final</a>                
-                        <input type="date" required>
+                        <input type="date" name="dataFim" required>
                     </div>   
                   </div>
 
@@ -120,5 +120,6 @@
     </div>
     <div class="info"> &copy; 2024 - Todos os direitos reservados</div> 
   </footer>
+  <script src="alugar.js"></script>
 </body>
 </html>

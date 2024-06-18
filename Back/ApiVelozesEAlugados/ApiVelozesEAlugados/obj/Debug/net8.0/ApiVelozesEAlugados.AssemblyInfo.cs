@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiVelozesEAlugados")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4cebf6eaf7270d0de1a807fb9087f2b27a9c677")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6b0faefe502f1bb42a875c538700876c6e95d78")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiVelozesEAlugados")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiVelozesEAlugados")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

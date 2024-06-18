@@ -47,6 +47,10 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AlugaDevolveViewModel.cs",
@@ -56,8 +60,7 @@
               "RelativeToolTip": "ApiVelozesEAlugados\\Application\\ViewModel\\AlugaDevolveViewModel.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAACGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T23:33:03.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T23:33:03.016Z"
             },
             {
               "$type": "Document",
@@ -69,12 +72,7 @@
               "RelativeToolTip": "ApiVelozesEAlugados\\Domain\\Models\\Relacoes\\AlugaDevolve.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAiwBoAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T23:30:56.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2024-06-16T23:30:56.635Z"
             },
             {
               "$type": "Document",
@@ -86,8 +84,7 @@
               "RelativeToolTip": "ApiVelozesEAlugados\\Domain\\Models\\Carros\\ICarroRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T22:09:06.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T22:09:06.618Z"
             },
             {
               "$type": "Document",
@@ -99,8 +96,7 @@
               "RelativeToolTip": "ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAAACQAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T21:54:21.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-08T21:54:21.97Z"
             },
             {
               "$type": "Document",
