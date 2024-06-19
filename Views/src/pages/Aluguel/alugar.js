@@ -25,7 +25,7 @@ function lerPessoa() {
         .then(pessoa => {
             preencherDetalhes(pessoa);
         })
-        .catch(error => console.error('Erro ao buscar dados do carro:', error));
+        .catch(error => console.error('Erro ao buscar dados da pessoa:', error));
 }
 
 function preencherDetalhes(pessoa) {
@@ -47,15 +47,22 @@ function alugarCarro() {
     const dataFim = document.querySelector('input[name="dataFim"]').value;
     const valorTotal = document.querySelector('input[name="valorTotal"]').value;
     const infoLocacao = document.querySelector('input[name="infoLocacao"]').value;
-    
+
+    //var dadosRecuperados = JSON.parse(sessionStorage.getItem('dadosUsuario'));
+    //var usuario = JSON.parse(dadosRecuperados);
+    //console.log('usuário logado: ',usuario);
+    //var dadosRecuperados = sessionStorage.getItem('dadosUsuario');
+    //console.log('Dados recuperados do sessionStorage:', dadosRecuperados);
+    //var usuario = JSON.parse(dadosRecuperados);
     var dadosRecuperados = JSON.parse(sessionStorage.getItem('dadosUsuario'));
     var usuario = JSON.parse(dadosRecuperados);
-    console.log(usuario);
+    console.log('usuário logado: ',usuario);
+
 
     const cpfCliente = usuario.pessoaCpf;
     console.log('CPF do cliente:', cpfCliente);
     const locacao = {
-        
+        codLocacao : 0,
         cliente_pessoa_cpf: cpfCliente,
         carro_placa: placaCarro,
         dataInicio: new Date(dataInicio).toISOString(),
@@ -65,24 +72,25 @@ function alugarCarro() {
         kmFinal: 0,
         infoLocacao: infoLocacao
     };
-    console.log(locacao);
+    const locacao_banco = JSON.stringify(locacao);
+    console.log("locacao banco: ",locacao_banco);
 
     fetch('https://localhost:7090/Alugar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(locacao)
+        body: locacao_banco
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Locação realizada com sucesso:', data);
-        // Redirecionar ou exibir mensagem de sucesso
-    })
-    .catch(error => console.error('Erro ao realizar a locação:', error));
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            console.log(response.json());
+        })
+        .then(response => {
+            console.log('Locação realizada com sucesso:', response);
+            alert("Locação realizada com sucesso!");
+        })
+        .catch(error => console.error('Erro ao realizar a locação:', error));
 }

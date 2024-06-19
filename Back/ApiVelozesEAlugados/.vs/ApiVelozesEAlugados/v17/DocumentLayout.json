@@ -70,7 +70,7 @@
               "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Domain\\Models\\Relacoes\\AlugaDevolve.cs",
               "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Domain\\Models\\Relacoes\\AlugaDevolve.cs",
               "RelativeToolTip": "ApiVelozesEAlugados\\Domain\\Models\\Relacoes\\AlugaDevolve.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAiwBoAAAAlAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAwBoAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T23:30:56.635Z"
             },
@@ -94,9 +94,10 @@
               "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
               "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
               "RelativeToolTip": "ApiVelozesEAlugados\\Infraestrutura\\Repositories\\CarroRepository.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAACQAAAA1AAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAkwCUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T21:54:21.97Z"
+              "WhenOpened": "2024-06-08T21:54:21.97Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -106,7 +107,7 @@
               "RelativeDocumentMoniker": "ApiVelozesEAlugados\\Controllers\\Carros\\CarroController.cs",
               "ToolTip": "C:\\Cursos\\Sistema de informa\u00E7\u00E3o\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\Controllers\\Carros\\CarroController.cs",
               "RelativeToolTip": "ApiVelozesEAlugados\\Controllers\\Carros\\CarroController.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAAFAAAAA+AAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAFMAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T22:23:17.586Z",
               "EditorCaption": ""
