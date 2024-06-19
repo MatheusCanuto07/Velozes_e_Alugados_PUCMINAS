@@ -32,3 +32,51 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('Error fetching data:', error);
         });
 });
+
+
+/*Pesquisa cards*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const anoInput = document.getElementById("ano");
+    const modeloInput = document.getElementById("modelo");
+    const marcaInput = document.getElementById("marca");
+    const cards = document.querySelectorAll(".card");
+    const cardsContainer = document.querySelector(".cards-container");
+
+    const noResultsMessage = document.createElement("p");
+    noResultsMessage.textContent = "Nenhum veículo disponível nos critérios informados";
+    noResultsMessage.style.display = "none";
+    noResultsMessage.style.color = "#ffffff";
+    cardsContainer.appendChild(noResultsMessage);
+
+    function filterCards() {
+        const anoFilter = anoInput.value.toLowerCase();
+        const modeloFilter = modeloInput.value.toLowerCase();
+        const marcaFilter = marcaInput.value.toLowerCase();
+        let hasResults = false;
+
+        cards.forEach(card => {
+            const ano = card.querySelector(".ano").textContent.toLowerCase();
+            const modelo = card.querySelector(".modelo").textContent.toLowerCase();
+            const marca = card.querySelector(".marca").textContent.toLowerCase();
+
+            const anoMatches = ano.includes(anoFilter);
+            const modeloMatches = modelo.includes(modeloFilter);
+            const marcaMatches = marca.includes(marcaFilter);
+
+            if (anoMatches && modeloMatches && marcaMatches) {
+                card.style.display = "";
+                hasResults = true;
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        noResultsMessage.style.display = hasResults ? "none" : "block";
+    }
+
+    anoInput.addEventListener("input", filterCards);
+    modeloInput.addEventListener("input", filterCards);
+    marcaInput.addEventListener("input", filterCards);
+    document.getElementById("pesquisar").addEventListener("click", filterCards);
+});
