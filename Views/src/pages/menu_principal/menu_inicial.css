@@ -41,6 +41,7 @@ label.logo {
 header nav ul {
     display: flex;
     align-items: center;
+    background-color: #0B1541;
 }
 
 header nav ul li {
@@ -78,11 +79,13 @@ main {
     padding-bottom: 100px; /* espaço para o footer */
 }
 
+
 /*Main*/
 
 .box h2 {
     font-size: 30px;
     color: white;
+  
 }
 
 .box {
@@ -103,22 +106,22 @@ main {
     gap: 18px;
 }
 
-.inputbox-cid {
+.inputbox-ano {
     width: 100%;
     height: auto; /* Ajuste a altura conforme necessário */
 }
 
-.inputbox-cid label,
-.inputbox-data1 label,
-.inputbox-data2 label {
+.inputbox-ano label,
+.inputbox-modelo label,
+.inputbox-marca label {
     display: block;
     margin-bottom: 5px;
     color: white;
 }
 
-.inputbox-cid input,
-.inputbox-data1 input,
-.inputbox-data2 input {
+.inputbox-ano input,
+.inputbox-modelo input,
+.inputbox-marca input {
     width: 100%;
     padding: 10px;
     border: none;
@@ -136,8 +139,8 @@ main {
     gap: 10px; /* Espaço entre os inputs */
 }
 
-.inputbox-data1,
-.inputbox-data2 {
+.inputbox-modelo,
+.inputbox-marca {
     flex: 1;
     height: auto; /* Ajuste a altura conforme necessário */
 }
@@ -210,14 +213,19 @@ button:hover {
     margin: 10px 0;
 }
 
+.card-content .ano{
+    color: #410b0b;
+   display: none;
+}
+
 .card-content button {
     background-color: #F4AD00;
     color: #0B1541;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .card-content button:hover {
