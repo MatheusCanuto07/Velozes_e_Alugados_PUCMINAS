@@ -55,7 +55,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: rgb(255, 5, 5);
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 5px;

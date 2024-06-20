@@ -7,15 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(`https://localhost:7090/api/pessoa/${usuario.pessoaCpf}`, {
         method: 'GET'
     })
-        .then(response => response.json())
-        .then(data => {
-            console.log("Todo objeto data: ", data);
-            
-            let dataNascimento = data.data_NASCIMENTO;
-            if (dataNascimento) {
-                const date = new Date(dataNascimento);
-                const formattedDate = `${String(date.getDate()).padStart(2, '0')}/${String(date.getMonth() + 1).padStart(2, '0')}/${date.getFullYear()}`;
-                document.getElementById('data_NASCIMENTO').value = formattedDate;
+    
+    .then(response => response.json())
+.then(data => {
+    // Extrair e formatar a data de nascimento
+    console.log("data:",data);
+    let dataNascimento = data.data_NASCIMENTO;
+    if (dataNascimento) {
+        // Criar um objeto Date a partir da string da data
+        const date = new Date(dataNascimento);
+        // Formatar a data no formato esperado pelo input type="date" (AAAA-MM-DD)
+        const formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+        // Definir o valor do input de data de nascimento
+        document.getElementById('data_NASCIMENTO').value = formattedDate;
             }
 
             document.getElementById('cpf').value = data.cpf;
@@ -28,7 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
             //document.getElementById('bairro').value = data.bairro;
             document.getElementById('cidade').value = data.cidade;
             document.getElementById('uf').value = data.uf;
-            document.getElementById('sexo').value = data.sexo;
+            var generoMabeado;
+            if(data.sexo === "M"){
+                generoMabeado = "masculino";
+
+            }else{
+                generoMabeado = "feminino";
+            }
+            document.getElementById('sexo').value = generoMabeado;
             document.getElementById('email').value = usuario.email;
             //document.getElementById('tipo').value = data.tipo;
             
@@ -118,4 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
             optionsList.classList.remove('active');
         });
     });*/
+
+    
 });
