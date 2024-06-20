@@ -10619,23 +10619,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\higor_kwmzknu\\.nuget\\packages\\": {},
+    "C:\\Users\\faelr\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Cursos\\Sistema de informação\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj",
+      "projectUniqueName": "C:\\Users\\faelr\\OneDrive\\Documentos\\TIAPN\\TIAPC-PUCMINAS\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj",
       "projectName": "ApiVelozesEAlugados",
-      "projectPath": "C:\\Cursos\\Sistema de informação\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj",
-      "packagesPath": "C:\\Users\\higor_kwmzknu\\.nuget\\packages\\",
-      "outputPath": "C:\\Cursos\\Sistema de informação\\1_2024\\Diciplinas\\TIAPN\\Trabalho_Final\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\obj\\",
+      "projectPath": "C:\\Users\\faelr\\OneDrive\\Documentos\\TIAPN\\TIAPC-PUCMINAS\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\ApiVelozesEAlugados.csproj",
+      "packagesPath": "C:\\Users\\faelr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\faelr\\OneDrive\\Documentos\\TIAPN\\TIAPC-PUCMINAS\\Back\\ApiVelozesEAlugados\\ApiVelozesEAlugados\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\higor_kwmzknu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\faelr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
