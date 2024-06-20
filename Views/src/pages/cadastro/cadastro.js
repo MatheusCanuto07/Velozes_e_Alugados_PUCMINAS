@@ -186,3 +186,42 @@ function capturaDados() {
       });
   }
   
+
+  //Colocando usuario no banco
+const express = require('express');
+const mysql = require('mysql');
+const bodyParser = require('body-parser');
+const app = express();
+
+app.use(bodyParser.json());
+
+const connection = mysql.createConnection({
+    host: '127.0.0.1',
+    user: 'root',
+    database: 'Cadastro'
+});
+
+connection.connect(error => {
+    if (error) throw error;
+    console.log('Conectado ao banco de dados.');
+});
+
+app.post('/api/Usuario', (req, res) => {
+    const user = req.body;
+
+    const query = 'INSERT INTO Usuario (nome, numero, email, nascimento, cpf, genero, cep, bairro, estado, rua, cidade, numCasa, senha) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+    const values = [user.nome, user.numero, user.email, user.nascimento, user.cpf, user.genero, user.cep, user.bairro, user.estado, user.rua, user.cidade, user.numCasa, user.senha];
+
+    connection.query(query, values, (error, results) => {
+        if (error) {
+            console.error('Erro ao inserir dados:', error);
+            res.status(500).send('Erro ao inserir dados');
+        } else {
+            res.status(200).send('Dados inseridos com sucesso');
+        }
+    });
+});
+
+app.listen(7090, () => {
+    console.log('Servidor rodando na porta 7090');
+});
