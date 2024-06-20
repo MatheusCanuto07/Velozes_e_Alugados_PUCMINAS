@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             //document.getElementById('tipo').value = data.tipo;
             
             //document.getElementById('senha').value = data.senha;
+
         })
         .catch(error => console.error('Erro ao carregar os dados:', error));
 
