@@ -8,7 +8,8 @@ function capturarValores() {
   var km = parseInt(document.getElementById('km').value);
   var disponibilidade = parseInt(document.getElementById('disponibilidade').value);
   var precoKm = parseInt(document.getElementById('precoKm').value);
-  var precoDiaria = parseInt(document.getElementById('precoDiaria').value);
+  var precoDiaria = parseFloat(document.getElementById('precoDiaria').value);
+  var URLImagem = document.getElementById('URLImagem').value;
   var observacoes = document.getElementById('observacoes').value;
 
   var isValid = true;
@@ -57,7 +58,9 @@ function capturarValores() {
     isValid = false;
     alert('Por favor, informe um preço por diária válido.');
   }
-
+  if (URLImagem === '') {
+    alert('Por favor, digite a URL da imagem.');
+  }
   // Exibir feedback para observações se estiver vazio
   if (observacoes === '') {
     alert('Por favor, informe observações sobre o veículo.');
@@ -67,14 +70,13 @@ function capturarValores() {
   if (isValid) {
     // Aqui você pode fazer o que quiser com os dados válidos, como enviar para um backend
     alert('Formulário validado com sucesso!');
-
     // Exemplo: Envio para um backend (requer implementação backend)
-    enviaDados(placa, modelo, marca, cor, ano, km, disponibilidade, precoKm, precoDiaria, observacoes);
+    enviaDados(placa, modelo, marca, cor, ano, km, disponibilidade, precoKm, precoDiaria, observacoes, URLImagem);
   }
 
 }
 
-function enviaDados(placa, modelo, marca, cor, ano, km, disponibilidade, precoKm, precoDiaria, observacoes) {
+function enviaDados(placa, modelo, marca, cor, ano, km, disponibilidade, precoKm, precoDiaria, observacoes, URLImagem) {
   // Fazendo a requisição fetch
   var url = "https://localhost:7090/api/Carro";
 
@@ -88,11 +90,12 @@ function enviaDados(placa, modelo, marca, cor, ano, km, disponibilidade, precoKm
     disponibilidade: disponibilidade,
     precoKm: precoKm,
     precoDiaria: precoDiaria,
-    observacoes: observacoes
+    observacoes: observacoes,
+    endereco_imagem : URLImagem
   };
 
   carroConvertido = JSON.stringify(formData);
-
+  console.log(carroConvertido);
   fetch(url, {
     method: 'POST',
     headers: {

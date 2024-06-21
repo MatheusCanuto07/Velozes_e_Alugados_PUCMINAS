@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <button class="btn-visao-geral"><a href="../menu_principal/menu_inicial.html"><p>Home</p></a></button>
       </div>
       `
-  if(usuario.tipo == "Funcionario"){
+  if(usuario.tipo == "Administrador"){
     var menu_adm = document.getElementById("menu_adm");
     menu_adm.innerHTML = str; 
   }
