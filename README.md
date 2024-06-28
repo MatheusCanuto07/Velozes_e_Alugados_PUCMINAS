@@ -25,7 +25,8 @@ Aqui vai ter um resumo muito bom algum dia
 
 Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
--
+- C# 8.0
+- Mysql 8.3.3
 
 ## Passos para Inicializar o Projeto
 
