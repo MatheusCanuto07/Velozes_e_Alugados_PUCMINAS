@@ -6,7 +6,7 @@
 
 `3° semestre`
 
-Aqui vai ter um resumo muito bom algum dia
+O Velozes e Alugados é uma plataforma multilateral projetada no formato de aplicação web para solucionar a alta demanda por aluguel de veículos, agências cadastram os seus veículos e clientes acessam para alugar.
 
 ## Integrantes
 
