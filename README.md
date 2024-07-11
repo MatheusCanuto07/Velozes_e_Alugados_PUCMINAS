@@ -21,6 +21,18 @@ Aqui vai ter um resumo muito bom algum dia
 
 * Luciana Mara Freitas Diniz
 
+## Tecnologias ,linguagens, ferramentas, serviços e bibliotecas utilizadas
+
+- Figma
+- Draw.io
+- Visual Studio Code
+- Visual Studio
+- HTML e CSS
+- JavaScript (React)
+- Bootstrap
+- Asp Net Core (C#)
+- MySQL****
+
 ## Pré-requisitos
 
 Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
