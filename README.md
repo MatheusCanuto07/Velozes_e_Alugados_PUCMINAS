@@ -6,7 +6,7 @@
 
 `3° semestre`
 
-O Velozes e Alugados é uma plataforma multilateral desenvolvida como uma aplicação web para atender à alta demanda por aluguel de veículos. Agências podem cadastrar seus veículos, e clientes têm acesso para alugá-los.
+O Velozes e Alugados é uma plataforma multilateral desenvolvida para web com o objetivo de atender à alta demanda por aluguel de veículos. Agências podem cadastrar seus veículos, e clientes têm acesso para alugá-los.
 
 ## Integrantes
 
